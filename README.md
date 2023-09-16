@@ -11,7 +11,7 @@ Use cases:
 
 * Local Maven files - scan, generate dependencies report
 * Integrate with the [GitLab](https://github.com/Nasdanika-Models/gitlab) model - scan multiple repositories, load ``pom.xml``'s, establish relationships between repositories, developers, organizations, repositories, ... Generate an HTML site
-* Same as above plus cross-link with organization-specific entities such as a people hierarchy. Loading with creation of sub-classes of the model. E.g. a subclass of ``Developer`` with a bi-directional reference to a person in the people hierarchy - this way it will be possible to retrieve a list of Maven projects where a person listed as a developer from a Person object. It will also be possible to roll up this information along the hierarchy and get a list of all Maven projects for a particular organization. Developer role may be linked to a documentation for the role - playbooks etc.         
+* Same as above plus cross-link with organization-specific entities such as an org/people hierarchy. Loading with creation of sub-classes of model classes. E.g. a subclass of ``Developer`` with a bi-directional reference to a person in the people hierarchy - this way it will be possible to retrieve a list of Maven projects where a person listed as a developer from a Person object. It will also be possible to roll up this information along the hierarchy and get a list of all Maven projects for a particular organization. Developer role may be linked to a documentation for the role - playbooks etc.         
 * Automated governance:
     * Dependencies (especially internal)
     * Data quality:
