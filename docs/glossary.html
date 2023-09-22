@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="EN">
+  <head>
+    <title>Glossary</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cerulean/bootstrap.min.css" id="nsd-bootstrap-theme-stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Nasdanika/html@master/model/app.gen/web-resources/css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jstree@3.3.11/dist/themes/default/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5.1.0/github-markdown.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/styles/default.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-vue@2.21.2/dist/bootstrap-vue.css">
+    <script src="https://cdn.jsdelivr.net/gh/Nasdanika/html@master/model/app.gen/web-resources/js/common.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Nasdanika/html@master/model/app.gen/web-resources/js/dark-head.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jstree@3.3.11/dist/jstree.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-vue@2.21.2/dist/bootstrap-vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Nasdanika/html@master/model/app.gen/web-resources/js/components/table.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/components/table.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.3/echarts.min.js"></script><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9BRJVLK8CC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9BRJVLK8CC');
+</script>    
+
+<script src="search-documents.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/olivernn/lunr.js@v2.3.9/lunr.js"></script>
+
+<script>
+// Script for full-text search of JsTree
+
+window.nsdJsTreeSearchCallback = function(str, node) { 
+    var sf = new $.vakata.search(str, true, { caseSensitive : false, fuzzy : false }); 
+    if (sf.search(node.text).isMatch) {
+		return true;
+	} 
+    let searchResult = this.search(str); 
+    for (const sr in searchResult) {
+        if (searchResult[sr].ref === node.original['data-nsd-label-uuid']) {
+            return true;
+        } 
+    } 
+    return false; 
+}.bind(lunr(function () {
+			  this.ref('id');
+			  this.field('title');
+			  this.field('content');
+
+			  for (const key in searchDocuments) {
+				  let doc = searchDocuments[key];
+				this.add({
+					id: doc['action-uuid'],
+					title: doc.title,
+					path: doc.path,
+					content: doc.content
+				});  
+			  }
+			}));
+</script>
+</head>
+  <body>
+    <div class="container-fluid nsd-app-container">
+      <div class="row">
+        <div class="col nsd-app-header">
+          <a href="https://github.com/Nasdanika-Models" data-nsd-label-uuid="26eb10fd-6b56-46a3-9baf-bc41b8c4c748" class="nsd-app-header-title">
+            <img src="https://docs.nasdanika.org/images/nasdanika-logo.png" class="nsd-app-label-icon">Nasdanika Models</a>
+          <ul class="nav nsd-app-header-navs">
+            <li class="nav-item">
+              <a href="search.html" data-nsd-label-uuid="6e8d17ed-5531-4177-9a5e-7a70ee34a56e" class="nav-link"><span class="fas fa-search nsd-app-label-icon"></span>Search</a>
+            </li>
+            <li class="nav-item"><span data-nsd-label-uuid="8c5a070d-174b-411d-8403-a1cd40d84fac" class="navbar-text"><span class="fas fa-book nsd-app-label-icon"></span>Glossary</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col nsd-app-navbar">
+          <ul class="navbar navbar-light navbar-expand-lg">
+            <a href="index.html" data-nsd-label-uuid="13804ac4-7aad-44ab-b448-75ed71a4c184" class="navbar-brand">
+              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EPackage.gif" class="nsd-app-label-icon">maven</a>
+            <button type="button" data-toggle="collapse" data-target="#nsd_1h" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="nsd_1h" class="collapse navbar-collapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a href="classifiers.html" data-nsd-label-uuid="e476b731-e8c7-4604-90a2-81ce09c88a28" class="nav-link">Classifiers</a>
+                </li>
+                <li class="nav-item">
+                  <a href="diagram.html" data-nsd-label-uuid="b3398bde-0ec3-4cf9-bb13-341ebac3a20d" class="nav-link"><span class="fas fa-project-diagram nsd-app-label-icon"></span>Diagram</a>
+                </li>
+                <li class="nav-item">
+                  </li><li data-nsd-label-uuid="a92e578d-9aad-4f81-a82d-c43c2dff672e" class="dropdown">
+                    <a role="button" data-toggle="dropdown" class="nav-link dropdown-toggle">
+                      <img src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/external-diagram-seo-media-dreamstale-lineal-dreamstale.png" class="nsd-app-label-icon">Graphs</a>
+                    <div class="dropdown-menu">
+                      <a href="default-graph.html" data-nsd-label-uuid="e900e2b4-58e4-4b75-a9dd-5c8df82ec810" class="dropdown-item">Default Graph</a>
+                      <a href="circular-layout-graph.html" data-nsd-label-uuid="1d24aed8-2b6b-4c76-ba09-23c8090b41dc" class="dropdown-item">Circular Graph</a>
+                      <a href="force-layout-graph.html" data-nsd-label-uuid="7e6657da-30bc-4828-a802-673cb5aa05be" class="dropdown-item">Force Graph</a>
+                    </div>
+                  </li>
+                
+              </ul>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div class="row nsd-app-content-row">
+        <div class="col nsd-app-navigation-panel">
+          <div class="list-group list-group-flush">
+            <a href="references/eClassifiers/Coordinates/index.html" data-nsd-label-uuid="b33dcac4-65fb-4ed8-be74-a6ae5e4316b0" class="list-group-item list-group-action">
+              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">Coordinates</a>
+          </div>
+        </div>
+        <div data-nsd-label-uuid="8c5a070d-174b-411d-8403-a1cd40d84fac" data-nsd-action-uris="uuid:8c5a070d-174b-411d-8403-a1cd40d84fac" class="col nsd-app-content-panel">
+          <div class="container-fluid">
+            <div class="row nsd-app-content-panel-title-and-items-row">
+              <div class="col-auto">
+                <h1><span data-nsd-label-uuid="8c5a070d-174b-411d-8403-a1cd40d84fac" class="nsd-app-content-panel-title"><span class="fas fa-book nsd-app-label-icon"></span>Glossary</span>
+                </h1>
+              </div>
+            </div>
+            <div class="row nsd-app-content-panel-content-row">
+              <div class="col">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col">     	<div id="semantic-info-app" class="container-fluid">
+     		<div class="row">
+     			<div class="col">
+					<b-form-group label="Filter" label-for="filter-input" label-cols-sm="auto" label-align-sm="right" label-size="sm" class="mb-0" description="You can use wildcards, e.g. 'foo*' or 'f*o'; title or content fields, e.g. 'title:foo* bar'; boosts, e.g. 'foo^10 bar'; fuzzy matches, e.g. 'foo~1'; and term presence, e.g. '+foo bar -baz'">
+			          <b-input-group size="sm">
+			            <b-form-input id="filter-input" v-model="filter" type="search" placeholder="Type to Search" debounce="700"></b-form-input>
+			
+			            <b-input-group-append>
+			              <b-button :disabled="!filter" @click="filter = ''">Clear</b-button>
+			            </b-input-group-append>
+			          </b-input-group>
+			        </b-form-group>
+			        
+				    <b-form-checkbox id="identifiers-checkbox" v-model="identifierField" name="identifier-checkbox" value="true">
+				      Identifier(s)
+				    </b-form-checkbox>			        
+			        
+				    <b-form-checkbox id="hideUUID-checkbox" v-model="hideUUID" name="hideUUID-checkbox" value="true">
+				      Hide UUID
+				    </b-form-checkbox>			        
+			        
+				    <b-table striped hover :items="items" :fields="fields">
+				      <template #cell(element)="data">
+				        <a :href="data.value.location">
+					      	<span v-if="data.value.icon">
+					      		<img v-if="data.value.icon.includes('/')" :src="data.value.icon">
+					      		<i v-else :class="data.value.icon"></i>
+					      	</span>
+				        	{{data.value.name}}
+				        
+				      </a></template>	
+				      <template #cell(identifiers)="data">
+				      	<span v-if="data.value.length == 1">
+					        {{data.value[0].value}}
+					        <i class="far fa-copy nsd-copy-to-clipboard" style="cursor:pointer" title="Copy identifier to clipboard" :onclick="data.value[0].onClick"></i> 
+				      	</span>
+				      	<ul v-else>
+				      		<li v-for="item in data.value">
+						        {{item.value}} <i class="far fa-copy nsd-copy-to-clipboard" style="cursor:pointer" title="Copy identifier to clipboard" :onclick="item.onClick"></i> 
+				      		</li>
+				      	</ul>
+				      </template>	
+				    </b-table>
+	        	</div>
+	        </div>	        
+     	</div>
+     
+		<script>		      
+			new Vue({
+				  el: '#semantic-info-app',
+				  data: {
+			        	filter: null,
+			        	semanticInfo: [{"identifiers":["uuid:26eb10fd-6b56-46a3-9baf-bc41b8c4c748"],"name":"Nasdanika Models","icon":"https://docs.nasdanika.org/images/nasdanika-logo.png","location":"https://github.com/Nasdanika-Models","type":{"name":"Action","ns-uri":"ecore://nasdanika.org/html/app"}},{"container":{"reference":"children","identifiers":["uuid:26eb10fd-6b56-46a3-9baf-bc41b8c4c748"]},"identifiers":["uuid:6e8d17ed-5531-4177-9a5e-7a70ee34a56e"],"name":"Search","icon":"fas fa-search","location":"search.html","type":{"name":"Action","ns-uri":"ecore://nasdanika.org/html/app"}},{"container":{"reference":"children","identifiers":["uuid:26eb10fd-6b56-46a3-9baf-bc41b8c4c748"]},"identifiers":["uuid:8c5a070d-174b-411d-8403-a1cd40d84fac"],"name":"Glossary","icon":"fas fa-book","location":"glossary.html","type":{"name":"Action","ns-uri":"ecore://nasdanika.org/html/app"}},{"container":{"reference":"navigation","identifiers":["uuid:26eb10fd-6b56-46a3-9baf-bc41b8c4c748"]},"identifiers":["uuid:39ee017c-6ad0-4adb-ac51-af1d5d0cfac2"],"name":"Sources","icon":"fab fa-github","location":"https://github.com/Nasdanika-Models/maven","type":{"name":"Action","ns-uri":"ecore://nasdanika.org/html/app"}},{"identifiers":["ecore://nasdanika.org/models/maven"],"name":"maven","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EPackage.gif","location":"index.html","type":{"name":"EPackage","ns-uri":"http://www.eclipse.org/emf/2002/Ecore"}},{"container":{"reference":"eClassifiers","identifiers":["ecore://nasdanika.org/models/maven"]},"identifiers":["ecore://nasdanika.org/models/maven/eClassifiers/Coordinates"],"name":"Coordinates","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","location":"references/eClassifiers/Coordinates/index.html","type":{"name":"EClass","ns-uri":"http://www.eclipse.org/emf/2002/Ecore"}},{"container":{"reference":"decorator","identifiers":["uuid:b33dcac4-65fb-4ed8-be74-a6ae5e4316b0"]},"identifiers":["uuid:2de8b217-5f90-4735-b663-e1483521febe"],"icon":"far fa-question-circle","type":{"name":"Link","ns-uri":"ecore://nasdanika.org/html/app"}},{"container":{"reference":"navigation","identifiers":["uuid:b33dcac4-65fb-4ed8-be74-a6ae5e4316b0"]},"identifiers":["uuid:24ac1248-1bee-4c10-8d21-c9eae47f0f48"],"name":"Diagram","icon":"fas fa-project-diagram","location":"references/eClassifiers/Coordinates/diagram.html","type":{"name":"Action","ns-uri":"ecore://nasdanika.org/html/app"}},{"container":{"reference":"navigation","identifiers":["uuid:b33dcac4-65fb-4ed8-be74-a6ae5e4316b0"]},"identifiers":["uuid:73270410-4006-456e-ae80-b196595de432"],"name":"Graphs","icon":"https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/external-diagram-seo-media-dreamstale-lineal-dreamstale.png","type":{"name":"Action","ns-uri":"ecore://nasdanika.org/html/app"}},{"container":{"reference":"children","identifiers":["uuid:73270410-4006-456e-ae80-b196595de432"]},"identifiers":["uuid:1d6b6472-583d-4cf1-8db7-68c9e3f19467"],"name":"Default Graph","location":"references/eClassifiers/Coordinates/default-graph.html","type":{"name":"Action","ns-uri":"ecore://nasdanika.org/html/app"}},{"container":{"reference":"decorator","identifiers":["uuid:1d6b6472-583d-4cf1-8db7-68c9e3f19467"]},"identifiers":["uuid:76d7db62-a84b-46ea-8667-d81e401155b7"],"icon":"far fa-question-circle","description":"A fixed force-layout graph of this classifier and related classifiers showing relationships between them","type":{"name":"Link","ns-uri":"ecore://nasdanika.org/html/app"}},{"container":{"reference":"children","identifiers":["uuid:73270410-4006-456e-ae80-b196595de432"]},"identifiers":["uuid:4580843e-746b-4171-a8d5-cf95e0050a17"],"name":"Circular Graph","location":"references/eClassifiers/Coordinates/circular-layout-graph.html","type":{"name":"Action","ns-uri":"ecore://nasdanika.org/html/app"}},{"container":{"reference":"decorator","identifiers":["uuid:4580843e-746b-4171-a8d5-cf95e0050a17"]},"identifiers":["uuid:644fb99c-fe4e-4050-a25a-d4263d9ef756"],"icon":"far fa-question-circle","description":"A circular layout graph of this classifier and related classifiers showing relationships between them","type":{"name":"Link","ns-uri":"ecore://nasdanika.org/html/app"}},{"container":{"reference":"children","identifiers":["uuid:73270410-4006-456e-ae80-b196595de432"]},"identifiers":["uuid:6e5f2fc7-a565-454b-b276-225deb592011"],"name":"Force Graph","location":"references/eClassifiers/Coordinates/force-layout-graph.html","type":{"name":"Action","ns-uri":"ecore://nasdanika.org/html/app"}},{"container":{"reference":"decorator","identifiers":["uuid:6e5f2fc7-a565-454b-b276-225deb592011"]},"identifiers":["uuid:946caa1d-b455-464e-a609-5f1266a314e8"],"icon":"far fa-question-circle","description":"A live force-layout graph of this classifier and related classifiers showing relationships between them","type":{"name":"Link","ns-uri":"ecore://nasdanika.org/html/app"}},{"container":{"reference":"decorator","identifiers":["uuid:73270410-4006-456e-ae80-b196595de432"]},"identifiers":["uuid:99f9f180-d001-4b59-89a5-ae6d7af136e3"],"icon":"far fa-question-circle","description":"Graphs of package classifiers showing relationships between them","type":{"name":"Label","ns-uri":"ecore://nasdanika.org/html/app"}},{"container":{"reference":"decorator","identifiers":["uuid:13804ac4-7aad-44ab-b448-75ed71a4c184"]},"identifiers":["uuid:d6925919-b13d-4ea5-a7ea-ab37588ec7b8"],"icon":"far fa-question-circle","type":{"name":"Link","ns-uri":"ecore://nasdanika.org/html/app"}},{"container":{"reference":"navigation","identifiers":["uuid:13804ac4-7aad-44ab-b448-75ed71a4c184"]},"identifiers":["uuid:e476b731-e8c7-4604-90a2-81ce09c88a28"],"name":"Classifiers","location":"classifiers.html","type":{"name":"Action","ns-uri":"ecore://nasdanika.org/html/app"}},{"container":{"reference":"navigation","identifiers":["uuid:13804ac4-7aad-44ab-b448-75ed71a4c184"]},"identifiers":["uuid:b3398bde-0ec3-4cf9-bb13-341ebac3a20d"],"name":"Diagram","icon":"fas fa-project-diagram","location":"diagram.html","type":{"name":"Action","ns-uri":"ecore://nasdanika.org/html/app"}},{"container":{"reference":"decorator","identifiers":["uuid:b3398bde-0ec3-4cf9-bb13-341ebac3a20d"]},"identifiers":["uuid:a097a76d-d990-46e4-ba70-b0f207d7d9c4"],"icon":"far fa-question-circle","description":"A class diagram showing package classifiers and relationships between them","type":{"name":"Link","ns-uri":"ecore://nasdanika.org/html/app"}},{"container":{"reference":"navigation","identifiers":["uuid:13804ac4-7aad-44ab-b448-75ed71a4c184"]},"identifiers":["uuid:a92e578d-9aad-4f81-a82d-c43c2dff672e"],"name":"Graphs","icon":"https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/external-diagram-seo-media-dreamstale-lineal-dreamstale.png","type":{"name":"Action","ns-uri":"ecore://nasdanika.org/html/app"}},{"container":{"reference":"children","identifiers":["uuid:a92e578d-9aad-4f81-a82d-c43c2dff672e"]},"identifiers":["uuid:e900e2b4-58e4-4b75-a9dd-5c8df82ec810"],"name":"Default Graph","location":"default-graph.html","type":{"name":"Action","ns-uri":"ecore://nasdanika.org/html/app"}},{"container":{"reference":"decorator","identifiers":["uuid:e900e2b4-58e4-4b75-a9dd-5c8df82ec810"]},"identifiers":["uuid:b92e6840-b542-4034-b90e-ba4209c7b2cb"],"icon":"far fa-question-circle","description":"A fixed force-layout graph of package classifiers showing relationships between them","type":{"name":"Link","ns-uri":"ecore://nasdanika.org/html/app"}},{"container":{"reference":"children","identifiers":["uuid:a92e578d-9aad-4f81-a82d-c43c2dff672e"]},"identifiers":["uuid:1d24aed8-2b6b-4c76-ba09-23c8090b41dc"],"name":"Circular Graph","location":"circular-layout-graph.html","type":{"name":"Action","ns-uri":"ecore://nasdanika.org/html/app"}},{"container":{"reference":"decorator","identifiers":["uuid:1d24aed8-2b6b-4c76-ba09-23c8090b41dc"]},"identifiers":["uuid:605f1bf4-7492-4062-8559-c45db0b7fb08"],"icon":"far fa-question-circle","description":"A circular layout graph of package classifiers showing relationships between them","type":{"name":"Link","ns-uri":"ecore://nasdanika.org/html/app"}},{"container":{"reference":"children","identifiers":["uuid:a92e578d-9aad-4f81-a82d-c43c2dff672e"]},"identifiers":["uuid:7e6657da-30bc-4828-a802-673cb5aa05be"],"name":"Force Graph","location":"force-layout-graph.html","type":{"name":"Action","ns-uri":"ecore://nasdanika.org/html/app"}},{"container":{"reference":"decorator","identifiers":["uuid:7e6657da-30bc-4828-a802-673cb5aa05be"]},"identifiers":["uuid:62279f7f-d907-47d0-b4da-7a6c0cb927d2"],"icon":"far fa-question-circle","description":"A live force-layout graph of package classifiers showing relationships between them","type":{"name":"Link","ns-uri":"ecore://nasdanika.org/html/app"}},{"container":{"reference":"decorator","identifiers":["uuid:a92e578d-9aad-4f81-a82d-c43c2dff672e"]},"identifiers":["uuid:8a2309a1-3137-47c4-b294-ff25aa7b6d2b"],"icon":"far fa-question-circle","description":"Graphs of package classifiers showing relationships between them","type":{"name":"Label","ns-uri":"ecore://nasdanika.org/html/app"}}],
+			        	identifierField: false,
+			        	hideUUID: true
+				  },				  
+				  computed: {			
+					fields: function() {
+			        	let fields = [
+			                {
+			                  key: 'element',
+			                  label: "Element",
+			                  sortable: false
+			                },
+			                {
+			                  key: 'description',
+			                  label: 'Description',
+			                  sortable: true
+			                }
+			              ];
+			        	
+			        	if (this.identifierField) {
+			        		fields.push(			                {
+				                  key: 'identifiers',
+				                  label: "Identifier(s)",
+				                  sortable: true
+				            });
+			        	}
+						return fields;
+					},  
+					items: function() {
+						const ret = []; 
+						for (let idx in this.semanticInfo) {
+							let semanticEntry = this.semanticInfo[idx];
+							let entry = {
+								identifiers: [],
+								element: {}
+							};
+							
+							if (semanticEntry.location) {
+								entry.element.location = semanticEntry.location;
+							}
+							if (semanticEntry.name) {
+								entry.element.name = semanticEntry.name;
+							}
+							if (semanticEntry.icon) {
+								entry.element.icon = semanticEntry.icon;
+							}
+							if (semanticEntry.description) {
+								entry.description = semanticEntry.description;
+							}
+							
+							if (semanticEntry.identifiers) {
+								for (let iIdx in semanticEntry.identifiers) {
+									let identifier = semanticEntry.identifiers[iIdx];
+									if (this.hideUUID && identifier && identifier.startsWith("uuid:")) {
+										continue;
+									}
+									entry.identifiers.push({
+										value: identifier,
+										onClick: "navigator.clipboard.writeText('" + identifier +"')"							
+									});
+								}
+							}
+
+							ret.push(entry);
+						}
+						
+						return ret.filter(item => {
+							if (item.identifiers.length == 0) {
+								return false;
+							}
+							if (this.filter && this.filter.length > 1) {
+								for (let identifierItem in item.identifiers) {
+									let identifier = item.identifiers[identifierItem].value;
+									if (identifier && identifier.toLowerCase().includes(this.filter.toLowerCase())) {
+										return true;
+									}									
+								}
+								if (item.description && item.description.toLowerCase().includes(this.filter.toLowerCase())) {
+									return true;
+								}
+								if (item.element.name && item.element.name.toLowerCase().includes(this.filter.toLowerCase())) {
+									return true;
+								}
+								return false;
+							}
+							return true;
+						}).sort((a, b) => {
+							if (a.element.name) {
+								if (b.element.name) {
+									return a.element.name.localeCompare(b.element.name);
+								}					
+								return -1;
+							}
+							return 1;
+						}); 						
+					}
+				  }
+			});   			
+		</script>
+				
+		</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col nsd-app-footer">
+          <ul class="nav nsd-app-footer-navs">
+            <li class="nav-item">
+              <a href="https://github.com/Nasdanika-Models/maven" data-nsd-label-uuid="39ee017c-6ad0-4adb-ac51-af1d5d0cfac2" class="nav-link"><span class="fab fa-github nsd-app-label-icon"></span>Sources</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -17,3 +17,6 @@ Use cases:
     * Data quality:
         * Presence of, say, description, developers, organization sections in the pom file.
         * Cross-referencing. E.g. developers in ``pom.xml`` shall also be in the [CODEOWNERS](https://docs.gitlab.com/ee/user/project/codeowners/) file. 
+
+https://github.com/yahro/maven-classloader/blob/master/src/main/java/com/bigfatgun/MavenClassLoader.java is an old example of creating a classloader from Maven coordinates. 
+A similar logic may be implemented in Coordinates (GAV).createClassLoader() operation.
