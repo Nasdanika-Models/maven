@@ -17,7 +17,7 @@ Use cases:
     * Data quality:
         * Presence of, say, description, developers, organization sections in the pom file.
         * Cross-referencing. E.g. developers in ``pom.xml`` shall also be in the [CODEOWNERS](https://docs.gitlab.com/ee/user/project/codeowners/) file. 
-* Maven URI scheme, e.g. ``maven`` and [URIHandler](https://download.eclipse.org/modeling/emf/emf/javadoc/2.4.3/org/eclipse/emf/ecore/resource/URIHandler.html). URI format: ``<scheme>://<groupId>/<artifactId>/<version>/<file>[/<jar path>]``. This would allow to transparently load resources from Maven repositories.        
+* Maven URI scheme, e.g. ``maven`` and [URIHandler](https://download.eclipse.org/modeling/emf/emf/javadoc/2.4.3/org/eclipse/emf/ecore/resource/URIHandler.html). URI format: ``<scheme>://<groupId>/<artifactId>/<version>/<file>[!/<jar path>]``. This would allow to transparently load resources from Maven repositories.        
 
 https://github.com/yahro/maven-classloader/blob/master/src/main/java/com/bigfatgun/MavenClassLoader.java is an old example of creating a classloader from Maven coordinates. 
 A similar logic may be implemented in Coordinates (GAV).createClassLoader() operation.
