@@ -5,5 +5,8 @@ module org.nasdanika.models.maven {
 	
 	requires transitive org.eclipse.emf.ecore;
 	requires transitive org.eclipse.emf.common;
+	requires maven.model;
+	requires plexus.utils;
+//	requires plexus.utils;
 	
 }

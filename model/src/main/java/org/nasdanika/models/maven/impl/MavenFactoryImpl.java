@@ -57,6 +57,7 @@ public class MavenFactoryImpl extends EFactoryImpl implements MavenFactory {
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
 			case MavenPackage.COORDINATES: return createCoordinates();
+			case MavenPackage.PROJECT: return createProject();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -71,6 +72,17 @@ public class MavenFactoryImpl extends EFactoryImpl implements MavenFactory {
 	public Coordinates createCoordinates() {
 		CoordinatesImpl coordinates = new CoordinatesImpl();
 		return coordinates;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Project createProject() {
+		ProjectImpl project = new ProjectImpl();
+		return project;
 	}
 
 	/**
