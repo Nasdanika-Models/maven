@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="EN">
   <head>
-    <title>Default Graph</title>
+    <title>Load specification</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cerulean/bootstrap.min.css" id="nsd-bootstrap-theme-stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -72,16 +72,6 @@ window.nsdJsTreeSearchCallback = function(str, node) {
 </script>
 </head>
   <body>
-    <div tabindex="-1" id="nsd_1r" class="modal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-body">Hover mouse over nodes elements to display tooltips.
-Double-click on nodes to navigate go documentation.
-Drag to rearrange.
-</div>
-        </div>
-      </div>
-    </div>
     <div class="container-fluid nsd-app-container">
       <div class="row">
         <div class="col nsd-app-header">
@@ -102,9 +92,9 @@ Drag to rearrange.
           <ul class="navbar navbar-light navbar-expand-lg">
             <a href="../../../index.html" data-nsd-label-uuid="802ca93d-a954-48c3-8bbd-817d53da64d9" class="navbar-brand">
               <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EPackage.gif" class="nsd-app-label-icon">maven</a>
-            <button type="button" data-toggle="collapse" data-target="#nsd_1o" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span>
+            <button type="button" data-toggle="collapse" data-target="#nsd_22" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span>
             </button>
-            <div id="nsd_1o" class="collapse navbar-collapse">
+            <div id="nsd_22" class="collapse navbar-collapse">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                   <a href="../../../classifiers.html" data-nsd-label-uuid="274ce865-25b6-4d33-a643-05958dedfe26" class="nav-link">Classifiers</a>
@@ -141,7 +131,7 @@ Drag to rearrange.
               <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">Project</a>
           </div>
         </div>
-        <div data-nsd-label-uuid="7fee43b2-db1d-425f-86c6-4d94e39ee767" data-nsd-action-uris="uuid:7fee43b2-db1d-425f-86c6-4d94e39ee767" class="col nsd-app-content-panel">
+        <div data-nsd-label-uuid="4bc7f317-461e-47f3-acdc-6ab6fb521a57" data-nsd-action-uris="uuid:4bc7f317-461e-47f3-acdc-6ab6fb521a57" class="col nsd-app-content-panel">
           <div class="container-fluid">
             <div class="row nsd-app-content-panel-breadcrumb-row">
               <div class="col">
@@ -151,9 +141,7 @@ Drag to rearrange.
                       <a href="index.html" data-nsd-label-uuid="1a4b2adb-7f39-4d34-b9ab-b149ab7c8a9f">
                         <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">Coordinates</a>
                     </li>
-                    <li class="breadcrumb-item"><span data-nsd-label-uuid="0ab7ec57-3453-4d54-ae43-f7b59b2daabe"><img src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/external-diagram-seo-media-dreamstale-lineal-dreamstale.png" class="nsd-app-label-icon">Graphs</span>
-                    </li>
-                    <li class="breadcrumb-item active"><span data-nsd-label-uuid="7fee43b2-db1d-425f-86c6-4d94e39ee767">Default Graph</span>
+                    <li class="breadcrumb-item active"><span data-nsd-label-uuid="4bc7f317-461e-47f3-acdc-6ab6fb521a57">Load specification</span>
                     </li>
                   </ol>
                 </nav>
@@ -161,7 +149,7 @@ Drag to rearrange.
             </div>
             <div class="row nsd-app-content-panel-title-and-items-row">
               <div class="col-auto">
-                <h1><span data-nsd-label-uuid="7fee43b2-db1d-425f-86c6-4d94e39ee767" class="nsd-app-content-panel-title">Default Graph<a data-toggle="modal" data-target="#nsd_1r" href="#" title="A fixed force-layout graph of this classifier and related classifiers showing relationships between them" style="vertical-align:super;font-size:x-small;margin-left:0.2em"><span class="far fa-question-circle nsd-app-label-icon"></span></a></span>
+                <h1><span data-nsd-label-uuid="4bc7f317-461e-47f3-acdc-6ab6fb521a57" class="nsd-app-content-panel-title">Load specification</span>
                 </h1>
               </div>
             </div>
@@ -169,36 +157,13 @@ Drag to rearrange.
               <div class="col">
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="col"><div id="graph-container-1" class="row" style="height:80vh;width:100%">
-</div>
-<script type="text/javascript">
-	$(document).ready(function() {
-		var dom = document.getElementById("graph-container-1");
-		var myChart = echarts.init(dom, null, {
-			render: "canvas",
-			useDirtyRect: false
-		});
-		var option = {"legend":{},"series":[{"type":"graph","emphasis":{"focus":"adjacency"},"data":[{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"Project@ecore://nasdanika.org/models/maven","name":"Project","value":{"externalLink":"../Project/index.html"},"x":393.71186358647634,"y":223.96037944266,"category":0},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EDataType.gif","id":"EString@http://www.eclipse.org/emf/2002/Ecore","name":"EString","value":{"externalLink":"https://ecore.models.nasdanika.org/references/eClassifiers/EString/index.html"},"x":531.0498769250507,"y":440.5729945873418,"category":1},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"Coordinates@ecore://nasdanika.org/models/maven","name":"Coordinates","value":{"externalLink":""},"x":274.7888427602873,"y":451.2048954714924,"category":0}],"symbolSize":20,"roam":true,"layout":"none","links":[{"source":0,"target":1},{"source":0,"target":2},{"source":2,"target":0},{"source":2,"target":1}],"categories":[{"name":"maven"},{"name":"ecore"}],"draggable":true,"label":{"show":true,"position":"right"},"lineStyle":{"color":"source","curveness":0}}]};
-		option.tooltip = {};
-		option.series[0].tooltip = {
-			formatter: function(arg) {
-				return arg.value ? arg.value.description : null;
-			}
-		};
-		myChart.setOption(option);
-		myChart.on("dblclick", function(params) {
-			if (params.value) {
-				if (params.value.link) {
-					window.open(params.value.link, "_self");
-				} else if (params.value.externalLink) {
-					window.open(params.value.externalLink);
-				}
-			}
-		});
-		window.addEventListener("resize", myChart.resize);
-	});
-</script>
-</div>
+                    <div class="col">
+<div>
+  <div id="load-specification-table">
+    <nsd-table :columns="[{&quot;visible&quot;:true,&quot;sortable&quot;:true,&quot;label&quot;:&quot;Key&quot;,&quot;key&quot;:&quot;key&quot;},{&quot;visible&quot;:true,&quot;sortable&quot;:true,&quot;label&quot;:&quot;Type&quot;,&quot;key&quot;:&quot;type&quot;},{&quot;key&quot;:&quot;multiplicity&quot;,&quot;visible&quot;:true,&quot;label&quot;:&quot;Multiplicity&quot;},{&quot;key&quot;:&quot;homogeneous&quot;,&quot;visible&quot;:true,&quot;label&quot;:&quot;Homogeneous&quot;},{&quot;key&quot;:&quot;strict-containment&quot;,&quot;visible&quot;:true,&quot;label&quot;:&quot;Strict Containment&quot;},{&quot;visible&quot;:true,&quot;sortable&quot;:true,&quot;label&quot;:&quot;Exclusive With&quot;,&quot;key&quot;:&quot;exclusive&quot;},{&quot;key&quot;:&quot;description&quot;,&quot;visible&quot;:true,&quot;label&quot;:&quot;Description&quot;}]" :items="[{&quot;type&quot;:&quot;<!-- EString--> \r\n<a href=\&quot;https://ecore.models.nasdanika.org/references/eClassifiers/EString/index.html\&quot;>\r\n  <img src=\&quot;https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EDataType.gif\&quot; class=\&quot;nsd-app-label-icon\&quot;/>EString<\/a>&quot;,&quot;multiplicity&quot;:&quot;0..1&quot;,&quot;key&quot;:&quot;artifact-id&quot;},{&quot;type&quot;:&quot;<!-- EString--> \r\n<a href=\&quot;https://ecore.models.nasdanika.org/references/eClassifiers/EString/index.html\&quot;>\r\n  <img src=\&quot;https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EDataType.gif\&quot; class=\&quot;nsd-app-label-icon\&quot;/>EString<\/a>&quot;,&quot;multiplicity&quot;:&quot;0..1&quot;,&quot;key&quot;:&quot;group-id&quot;},{&quot;type&quot;:&quot;<!-- EString--> \r\n<a href=\&quot;https://ecore.models.nasdanika.org/references/eClassifiers/EString/index.html\&quot;>\r\n  <img src=\&quot;https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EDataType.gif\&quot; class=\&quot;nsd-app-label-icon\&quot;/>EString<\/a>&quot;,&quot;multiplicity&quot;:&quot;0..1&quot;,&quot;key&quot;:&quot;version&quot;}]" config-key="287000967-Coordinates-load-specification" />
+  </div>
+  <script>new Vue({ el: '#load-specification-table' });</script>
+</div></div>
                   </div>
                 </div>
               </div>
