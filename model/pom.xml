@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.nasdanika.models.maven</groupId>
-		<version>2024.5.0</version>
+		<version>2024.5.1</version>
 		<artifactId>parent</artifactId>
 		<relativePath>..</relativePath>
 	</parent>
@@ -77,7 +77,7 @@
 		<dependency>
 			<groupId>org.nasdanika.core</groupId>
 			<artifactId>common</artifactId>
-			<version>2024.5.0</version>
+			<version>2024.5.1</version>
 		</dependency>
 	</dependencies>
 </project>
