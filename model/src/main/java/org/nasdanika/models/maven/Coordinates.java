@@ -2,6 +2,8 @@
  */
 package org.nasdanika.models.maven;
 
+import java.util.function.Function;
+
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -16,6 +18,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.nasdanika.models.maven.Coordinates#getGroupId <em>Group Id</em>}</li>
  *   <li>{@link org.nasdanika.models.maven.Coordinates#getArtifactId <em>Artifact Id</em>}</li>
  *   <li>{@link org.nasdanika.models.maven.Coordinates#getVersion <em>Version</em>}</li>
+ *   <li>{@link org.nasdanika.models.maven.Coordinates#getTarget <em>Target</em>}</li>
  * </ul>
  *
  * @see org.nasdanika.models.maven.MavenPackage#getCoordinates()
@@ -89,4 +92,40 @@ public interface Coordinates extends EObject {
 	 * @generated
 	 */
 	void setVersion(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Target</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Target</em>' reference.
+	 * @see #setTarget(Model)
+	 * @see org.nasdanika.models.maven.MavenPackage#getCoordinates_Target()
+	 * @model
+	 * @generated
+	 */
+	Model getTarget();
+
+	/**
+	 * Sets the value of the '{@link org.nasdanika.models.maven.Coordinates#getTarget <em>Target</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Target</em>' reference.
+	 * @see #getTarget()
+	 * @generated
+	 */
+	void setTarget(Model value);
+	
+	/**
+	 * Resolves target for this object and children
+	 * @param resolver
+	 */
+	default void resolve(Function<Coordinates,Model> resolver) {
+		setTarget(resolver.apply(this));
+		eContents().forEach(c -> {
+			if (c instanceof Coordinates) {
+				((Coordinates) c).resolve(resolver);
+			}
+		});
+	}	
+	
 } // Coordinates

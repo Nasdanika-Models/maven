@@ -9,6 +9,27 @@ import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
 
 import org.eclipse.emf.ecore.EObject;
 
+import org.nasdanika.models.maven.Activation;
+import org.nasdanika.models.maven.BuildBase;
+import org.nasdanika.models.maven.CiManagement;
+import org.nasdanika.models.maven.Contributor;
+import org.nasdanika.models.maven.Coordinates;
+import org.nasdanika.models.maven.Dependency;
+import org.nasdanika.models.maven.Developer;
+import org.nasdanika.models.maven.DistributionManagement;
+import org.nasdanika.models.maven.IssueManagement;
+import org.nasdanika.models.maven.License;
+import org.nasdanika.models.maven.MailingList;
+import org.nasdanika.models.maven.MavenPackage;
+import org.nasdanika.models.maven.Model;
+import org.nasdanika.models.maven.ModelBase;
+import org.nasdanika.models.maven.Organization;
+import org.nasdanika.models.maven.Parent;
+import org.nasdanika.models.maven.Prerequisites;
+import org.nasdanika.models.maven.Profile;
+import org.nasdanika.models.maven.Reporting;
+import org.nasdanika.models.maven.Repository;
+import org.nasdanika.models.maven.Scm;
 import org.nasdanika.models.maven.*;
 
 /**
@@ -72,8 +93,84 @@ public class MavenAdapterFactory extends AdapterFactoryImpl {
 				return createCoordinatesAdapter();
 			}
 			@Override
-			public Adapter caseProject(Project object) {
-				return createProjectAdapter();
+			public Adapter caseModelBase(ModelBase object) {
+				return createModelBaseAdapter();
+			}
+			@Override
+			public Adapter caseDependency(Dependency object) {
+				return createDependencyAdapter();
+			}
+			@Override
+			public Adapter caseModule(org.nasdanika.models.maven.Module object) {
+				return createModuleAdapter();
+			}
+			@Override
+			public Adapter caseModel(Model object) {
+				return createModelAdapter();
+			}
+			@Override
+			public Adapter caseParent(Parent object) {
+				return createParentAdapter();
+			}
+			@Override
+			public Adapter caseContributor(Contributor object) {
+				return createContributorAdapter();
+			}
+			@Override
+			public Adapter caseDeveloper(Developer object) {
+				return createDeveloperAdapter();
+			}
+			@Override
+			public Adapter caseIssueManagement(IssueManagement object) {
+				return createIssueManagementAdapter();
+			}
+			@Override
+			public Adapter caseLicense(License object) {
+				return createLicenseAdapter();
+			}
+			@Override
+			public Adapter caseOrganization(Organization object) {
+				return createOrganizationAdapter();
+			}
+			@Override
+			public Adapter casePrerequisites(Prerequisites object) {
+				return createPrerequisitesAdapter();
+			}
+			@Override
+			public Adapter caseProfile(Profile object) {
+				return createProfileAdapter();
+			}
+			@Override
+			public Adapter caseBuildBase(BuildBase object) {
+				return createBuildBaseAdapter();
+			}
+			@Override
+			public Adapter caseActivation(Activation object) {
+				return createActivationAdapter();
+			}
+			@Override
+			public Adapter caseMailingList(MailingList object) {
+				return createMailingListAdapter();
+			}
+			@Override
+			public Adapter caseScm(Scm object) {
+				return createScmAdapter();
+			}
+			@Override
+			public Adapter caseRepository(Repository object) {
+				return createRepositoryAdapter();
+			}
+			@Override
+			public Adapter caseReporting(Reporting object) {
+				return createReportingAdapter();
+			}
+			@Override
+			public Adapter caseCiManagement(CiManagement object) {
+				return createCiManagementAdapter();
+			}
+			@Override
+			public Adapter caseDistributionManagement(DistributionManagement object) {
+				return createDistributionManagementAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -110,16 +207,282 @@ public class MavenAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.maven.Project <em>Project</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.maven.ModelBase <em>Model Base</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.nasdanika.models.maven.Project
+	 * @see org.nasdanika.models.maven.ModelBase
 	 * @generated
 	 */
-	public Adapter createProjectAdapter() {
+	public Adapter createModelBaseAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.maven.Dependency <em>Dependency</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.maven.Dependency
+	 * @generated
+	 */
+	public Adapter createDependencyAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.maven.Module <em>Module</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.maven.Module
+	 * @generated
+	 */
+	public Adapter createModuleAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.maven.Model <em>Model</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.maven.Model
+	 * @generated
+	 */
+	public Adapter createModelAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.maven.Parent <em>Parent</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.maven.Parent
+	 * @generated
+	 */
+	public Adapter createParentAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.maven.Contributor <em>Contributor</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.maven.Contributor
+	 * @generated
+	 */
+	public Adapter createContributorAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.maven.Developer <em>Developer</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.maven.Developer
+	 * @generated
+	 */
+	public Adapter createDeveloperAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.maven.IssueManagement <em>Issue Management</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.maven.IssueManagement
+	 * @generated
+	 */
+	public Adapter createIssueManagementAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.maven.License <em>License</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.maven.License
+	 * @generated
+	 */
+	public Adapter createLicenseAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.maven.Organization <em>Organization</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.maven.Organization
+	 * @generated
+	 */
+	public Adapter createOrganizationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.maven.Prerequisites <em>Prerequisites</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.maven.Prerequisites
+	 * @generated
+	 */
+	public Adapter createPrerequisitesAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.maven.Profile <em>Profile</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.maven.Profile
+	 * @generated
+	 */
+	public Adapter createProfileAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.maven.BuildBase <em>Build Base</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.maven.BuildBase
+	 * @generated
+	 */
+	public Adapter createBuildBaseAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.maven.Activation <em>Activation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.maven.Activation
+	 * @generated
+	 */
+	public Adapter createActivationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.maven.MailingList <em>Mailing List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.maven.MailingList
+	 * @generated
+	 */
+	public Adapter createMailingListAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.maven.Scm <em>Scm</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.maven.Scm
+	 * @generated
+	 */
+	public Adapter createScmAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.maven.Repository <em>Repository</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.maven.Repository
+	 * @generated
+	 */
+	public Adapter createRepositoryAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.maven.Reporting <em>Reporting</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.maven.Reporting
+	 * @generated
+	 */
+	public Adapter createReportingAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.maven.CiManagement <em>Ci Management</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.maven.CiManagement
+	 * @generated
+	 */
+	public Adapter createCiManagementAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.maven.DistributionManagement <em>Distribution Management</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.maven.DistributionManagement
+	 * @generated
+	 */
+	public Adapter createDistributionManagementAdapter() {
 		return null;
 	}
 

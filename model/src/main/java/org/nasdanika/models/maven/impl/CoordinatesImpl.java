@@ -8,6 +8,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.nasdanika.models.maven.Coordinates;
 import org.nasdanika.models.maven.MavenPackage;
+import org.nasdanika.models.maven.Model;
 
 /**
  * <!-- begin-user-doc -->
@@ -20,6 +21,7 @@ import org.nasdanika.models.maven.MavenPackage;
  *   <li>{@link org.nasdanika.models.maven.impl.CoordinatesImpl#getGroupId <em>Group Id</em>}</li>
  *   <li>{@link org.nasdanika.models.maven.impl.CoordinatesImpl#getArtifactId <em>Artifact Id</em>}</li>
  *   <li>{@link org.nasdanika.models.maven.impl.CoordinatesImpl#getVersion <em>Version</em>}</li>
+ *   <li>{@link org.nasdanika.models.maven.impl.CoordinatesImpl#getTarget <em>Target</em>}</li>
  * </ul>
  *
  * @generated
@@ -148,6 +150,35 @@ public class CoordinatesImpl extends MinimalEObjectImpl.Container implements Coo
 	 * @generated
 	 */
 	@Override
+	public Model getTarget() {
+		return (Model)eDynamicGet(MavenPackage.COORDINATES__TARGET, MavenPackage.Literals.COORDINATES__TARGET, true, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Model basicGetTarget() {
+		return (Model)eDynamicGet(MavenPackage.COORDINATES__TARGET, MavenPackage.Literals.COORDINATES__TARGET, false, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTarget(Model newTarget) {
+		eDynamicSet(MavenPackage.COORDINATES__TARGET, MavenPackage.Literals.COORDINATES__TARGET, newTarget);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case MavenPackage.COORDINATES__GROUP_ID:
@@ -156,6 +187,9 @@ public class CoordinatesImpl extends MinimalEObjectImpl.Container implements Coo
 				return getArtifactId();
 			case MavenPackage.COORDINATES__VERSION:
 				return getVersion();
+			case MavenPackage.COORDINATES__TARGET:
+				if (resolve) return getTarget();
+				return basicGetTarget();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -176,6 +210,9 @@ public class CoordinatesImpl extends MinimalEObjectImpl.Container implements Coo
 				return;
 			case MavenPackage.COORDINATES__VERSION:
 				setVersion((String)newValue);
+				return;
+			case MavenPackage.COORDINATES__TARGET:
+				setTarget((Model)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -198,6 +235,9 @@ public class CoordinatesImpl extends MinimalEObjectImpl.Container implements Coo
 			case MavenPackage.COORDINATES__VERSION:
 				setVersion(VERSION_EDEFAULT);
 				return;
+			case MavenPackage.COORDINATES__TARGET:
+				setTarget((Model)null);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -216,6 +256,8 @@ public class CoordinatesImpl extends MinimalEObjectImpl.Container implements Coo
 				return ARTIFACT_ID_EDEFAULT == null ? getArtifactId() != null : !ARTIFACT_ID_EDEFAULT.equals(getArtifactId());
 			case MavenPackage.COORDINATES__VERSION:
 				return VERSION_EDEFAULT == null ? getVersion() != null : !VERSION_EDEFAULT.equals(getVersion());
+			case MavenPackage.COORDINATES__TARGET:
+				return basicGetTarget() != null;
 		}
 		return super.eIsSet(featureID);
 	}
