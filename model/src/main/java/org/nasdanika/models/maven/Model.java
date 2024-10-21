@@ -13,6 +13,7 @@ import java.util.function.Function;
 import org.apache.maven.model.io.xpp3.MavenXpp3Reader;
 import org.codehaus.plexus.util.xml.pull.XmlPullParserException;
 import org.eclipse.emf.common.util.EList;
+import org.nasdanika.common.Util;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,6 +36,8 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link org.nasdanika.models.maven.Model#getParent <em>Parent</em>}</li>
  *   <li>{@link org.nasdanika.models.maven.Model#getPrerequisites <em>Prerequisites</em>}</li>
  *   <li>{@link org.nasdanika.models.maven.Model#getProfiles <em>Profiles</em>}</li>
+ *   <li>{@link org.nasdanika.models.maven.Model#getPackaging <em>Packaging</em>}</li>
+ *   <li>{@link org.nasdanika.models.maven.Model#getInceptionYear <em>Inception Year</em>}</li>
  * </ul>
  *
  * @see org.nasdanika.models.maven.MavenPackage#getModel()
@@ -256,6 +259,50 @@ public interface Model extends ModelBase, Coordinates {
 	 */
 	EList<Profile> getProfiles();
 	
+	/**
+	 * Returns the value of the '<em><b>Packaging</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Packaging</em>' attribute.
+	 * @see #setPackaging(String)
+	 * @see org.nasdanika.models.maven.MavenPackage#getModel_Packaging()
+	 * @model
+	 * @generated
+	 */
+	String getPackaging();
+
+	/**
+	 * Sets the value of the '{@link org.nasdanika.models.maven.Model#getPackaging <em>Packaging</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Packaging</em>' attribute.
+	 * @see #getPackaging()
+	 * @generated
+	 */
+	void setPackaging(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Inception Year</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Inception Year</em>' attribute.
+	 * @see #setInceptionYear(String)
+	 * @see org.nasdanika.models.maven.MavenPackage#getModel_InceptionYear()
+	 * @model
+	 * @generated
+	 */
+	String getInceptionYear();
+
+	/**
+	 * Sets the value of the '{@link org.nasdanika.models.maven.Model#getInceptionYear <em>Inception Year</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Inception Year</em>' attribute.
+	 * @see #getInceptionYear()
+	 * @generated
+	 */
+	void setInceptionYear(String value);
+
 	default void load(org.apache.maven.model.Model model) {
 		load(model, MavenFactory.eINSTANCE);
 	}
@@ -266,6 +313,9 @@ public interface Model extends ModelBase, Coordinates {
 		setArtifactId(model.getArtifactId());
 		setGroupId(model.getGroupId());
 		setVersion(model.getVersion());		
+		setPackaging(model.getPackaging());
+		
+		setInceptionYear(model.getInceptionYear());
 		
 		List<Contributor> contributors = getContributors();		
 		for (org.apache.maven.model.Contributor c: model.getContributors()) {
@@ -297,7 +347,18 @@ public interface Model extends ModelBase, Coordinates {
 			Parent p = factory.createParent();
 			p.load(parent);
 			setParent(p);
+			
+			if (Util.isBlank(getGroupId())) {
+				setGroupId(parent.getGroupId());
+			}
+			
+			if (Util.isBlank(getVersion())) {
+				setVersion(parent.getVersion());
+			}				
+			
 		}
+		
+		setId(getGroupId() + ":" + getArtifactId() + ":" + getPackaging() + ":" + getVersion());
 		
 		EList<Profile> profiles = getProfiles();
 		for (org.apache.maven.model.Profile p: model.getProfiles()) {

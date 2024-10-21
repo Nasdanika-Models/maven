@@ -6,9 +6,7 @@ import java.util.Map.Entry;
 
 import org.apache.maven.model.DependencyManagement;
 import org.eclipse.emf.common.util.EList;
-
-import org.eclipse.emf.ecore.EObject;
-
+import org.nasdanika.ncore.StringIdentity;
 import org.nasdanika.ncore.StringProperty;
 
 /**
@@ -34,7 +32,7 @@ import org.nasdanika.ncore.StringProperty;
  * @model
  * @generated
  */
-public interface ModelBase extends EObject {
+public interface ModelBase extends StringIdentity {
 	/**
 	 * Returns the value of the '<em><b>Dependencies</b></em>' containment reference list.
 	 * The list contents are of type {@link org.nasdanika.models.maven.Dependency}.

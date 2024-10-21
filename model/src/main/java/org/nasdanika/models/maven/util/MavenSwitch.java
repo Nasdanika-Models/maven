@@ -28,6 +28,7 @@ import org.nasdanika.models.maven.Profile;
 import org.nasdanika.models.maven.Reporting;
 import org.nasdanika.models.maven.Repository;
 import org.nasdanika.models.maven.Scm;
+import org.nasdanika.ncore.StringIdentity;
 import org.nasdanika.models.maven.*;
 
 /**
@@ -96,6 +97,7 @@ public class MavenSwitch<T> extends Switch<T> {
 			case MavenPackage.MODEL_BASE: {
 				ModelBase modelBase = (ModelBase)theEObject;
 				T result = caseModelBase(modelBase);
+				if (result == null) result = caseStringIdentity(modelBase);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -117,6 +119,7 @@ public class MavenSwitch<T> extends Switch<T> {
 				T result = caseModel(model);
 				if (result == null) result = caseModelBase(model);
 				if (result == null) result = caseCoordinates(model);
+				if (result == null) result = caseStringIdentity(model);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -137,6 +140,7 @@ public class MavenSwitch<T> extends Switch<T> {
 				Developer developer = (Developer)theEObject;
 				T result = caseDeveloper(developer);
 				if (result == null) result = caseContributor(developer);
+				if (result == null) result = caseStringIdentity(developer);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -168,6 +172,7 @@ public class MavenSwitch<T> extends Switch<T> {
 				Profile profile = (Profile)theEObject;
 				T result = caseProfile(profile);
 				if (result == null) result = caseModelBase(profile);
+				if (result == null) result = caseStringIdentity(profile);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -535,6 +540,21 @@ public class MavenSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseDistributionManagement(DistributionManagement object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>String Identity</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>String Identity</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseStringIdentity(StringIdentity object) {
 		return null;
 	}
 

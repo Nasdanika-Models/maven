@@ -51,6 +51,8 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference maven.ecore#//Model/parent"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven.ecore#//Model/prerequisites"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven.ecore#//Model/profiles"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven.ecore#//Model/packaging"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven.ecore#//Model/inceptionYear"/>
     </genClasses>
     <genClasses ecoreClass="maven.ecore#//Parent">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven.ecore#//Parent/relativePath"/>
@@ -65,9 +67,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven.ecore#//Contributor/timezone"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven.ecore#//Contributor/url"/>
     </genClasses>
-    <genClasses ecoreClass="maven.ecore#//Developer">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven.ecore#//Developer/id"/>
-    </genClasses>
+    <genClasses ecoreClass="maven.ecore#//Developer"/>
     <genClasses ecoreClass="maven.ecore#//IssueManagement"/>
     <genClasses ecoreClass="maven.ecore#//License">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven.ecore#//License/comments"/>
@@ -83,7 +83,6 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven.ecore#//Prerequisites/maven"/>
     </genClasses>
     <genClasses ecoreClass="maven.ecore#//Profile">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven.ecore#//Profile/id"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven.ecore#//Profile/source"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven.ecore#//Profile/activation"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven.ecore#//Profile/buildBase"/>

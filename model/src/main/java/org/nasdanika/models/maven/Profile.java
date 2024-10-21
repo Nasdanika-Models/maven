@@ -12,7 +12,6 @@ package org.nasdanika.models.maven;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.nasdanika.models.maven.Profile#getId <em>Id</em>}</li>
  *   <li>{@link org.nasdanika.models.maven.Profile#getSource <em>Source</em>}</li>
  *   <li>{@link org.nasdanika.models.maven.Profile#getActivation <em>Activation</em>}</li>
  *   <li>{@link org.nasdanika.models.maven.Profile#getBuildBase <em>Build Base</em>}</li>
@@ -23,28 +22,6 @@ package org.nasdanika.models.maven;
  * @generated
  */
 public interface Profile extends ModelBase {
-	/**
-	 * Returns the value of the '<em><b>Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Id</em>' attribute.
-	 * @see #setId(String)
-	 * @see org.nasdanika.models.maven.MavenPackage#getProfile_Id()
-	 * @model
-	 * @generated
-	 */
-	String getId();
-
-	/**
-	 * Sets the value of the '{@link org.nasdanika.models.maven.Profile#getId <em>Id</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Id</em>' attribute.
-	 * @see #getId()
-	 * @generated
-	 */
-	void setId(String value);
-
 	/**
 	 * Returns the value of the '<em><b>Source</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -2,8 +2,16 @@
  */
 package org.nasdanika.models.maven;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.function.BiConsumer;
+import java.util.function.Function;
+
 import org.apache.maven.model.Exclusion;
 import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.ecore.EObject;
+import org.nasdanika.common.Util;
+import org.nasdanika.ncore.StringProperty;
 
 /**
  * <!-- begin-user-doc -->
@@ -191,6 +199,42 @@ public interface Dependency extends Coordinates {
 		setScope(dependency.getScope());
 		setSystemPath(dependency.getSystemPath());
 		setType(dependency.getType());
+	}
+	
+	private static void collectModelProperties(
+			Model model, 
+			Function<Coordinates, Model> resolver,
+			BiConsumer<String,String> collector) {
+		
+		Parent parent = model.getParent();
+		if (parent != null) {
+			Model pModel = resolver.apply(parent);
+			if (pModel != null) {
+				collectModelProperties(pModel, resolver, collector);
+			}
+		}
+		for (StringProperty prop: model.getProperties()) {
+			collector.accept(prop.getName(), prop.getValue());
+		}
+		
+	}
+	
+	@Override
+	default void resolve(Function<Coordinates, Model> resolver) {
+		Coordinates key = MavenFactory.eINSTANCE.createCoordinates();
+		Map<String,String> props = new HashMap<>();
+		EObject eCont = eContainer();
+		if (eCont instanceof Model) {
+			Model model = (Model) eCont;
+			collectModelProperties(model, resolver, props::put);
+			props.put("project.groupId", model.getGroupId());
+			props.put("project.artifactId", model.getArtifactId());
+			props.put("project.version", model.getVersion());
+		}
+		key.setGroupId(Util.interpolate(getGroupId(), props::get));
+		key.setArtifactId(Util.interpolate(getArtifactId(), props::get));
+		key.setVersion(Util.interpolate(getVersion(), props::get));
+		setTarget(resolver.apply(key));
 	}
 
 } // Dependency

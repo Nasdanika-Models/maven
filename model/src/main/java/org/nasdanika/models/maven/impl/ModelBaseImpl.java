@@ -10,9 +10,6 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
 import org.eclipse.emf.ecore.util.InternalEList;
 
 import org.nasdanika.models.maven.Dependency;
@@ -23,6 +20,7 @@ import org.nasdanika.models.maven.Reporting;
 import org.nasdanika.models.maven.Repository;
 
 import org.nasdanika.ncore.StringProperty;
+import org.nasdanika.ncore.impl.StringIdentityImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -44,7 +42,7 @@ import org.nasdanika.ncore.StringProperty;
  *
  * @generated
  */
-public class ModelBaseImpl extends MinimalEObjectImpl.Container implements ModelBase {
+public class ModelBaseImpl extends StringIdentityImpl implements ModelBase {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -62,16 +60,6 @@ public class ModelBaseImpl extends MinimalEObjectImpl.Container implements Model
 	@Override
 	protected EClass eStaticClass() {
 		return MavenPackage.Literals.MODEL_BASE;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	protected int eStaticFeatureCount() {
-		return 0;
 	}
 
 	/**

@@ -30,7 +30,7 @@ import org.nasdanika.models.maven.Profile;
 import org.nasdanika.models.maven.Reporting;
 import org.nasdanika.models.maven.Repository;
 import org.nasdanika.models.maven.Scm;
-import org.nasdanika.models.maven.*;
+import org.nasdanika.ncore.StringIdentity;
 
 /**
  * <!-- begin-user-doc -->
@@ -171,6 +171,10 @@ public class MavenAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseDistributionManagement(DistributionManagement object) {
 				return createDistributionManagementAdapter();
+			}
+			@Override
+			public Adapter caseStringIdentity(StringIdentity object) {
+				return createStringIdentityAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -483,6 +487,20 @@ public class MavenAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createDistributionManagementAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.ncore.StringIdentity <em>String Identity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.ncore.StringIdentity
+	 * @generated
+	 */
+	public Adapter createStringIdentityAdapter() {
 		return null;
 	}
 

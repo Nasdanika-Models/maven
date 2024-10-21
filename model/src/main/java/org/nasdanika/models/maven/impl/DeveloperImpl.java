@@ -6,6 +6,8 @@ import org.eclipse.emf.ecore.EClass;
 
 import org.nasdanika.models.maven.Developer;
 import org.nasdanika.models.maven.MavenPackage;
+import org.nasdanika.ncore.NcorePackage;
+import org.nasdanika.ncore.StringIdentity;
 
 /**
  * <!-- begin-user-doc -->
@@ -57,7 +59,7 @@ public class DeveloperImpl extends ContributorImpl implements Developer {
 	 */
 	@Override
 	public String getId() {
-		return (String)eDynamicGet(MavenPackage.DEVELOPER__ID, MavenPackage.Literals.DEVELOPER__ID, true, true);
+		return (String)eDynamicGet(MavenPackage.DEVELOPER__ID, NcorePackage.Literals.STRING_IDENTITY__ID, true, true);
 	}
 
 	/**
@@ -67,7 +69,7 @@ public class DeveloperImpl extends ContributorImpl implements Developer {
 	 */
 	@Override
 	public void setId(String newId) {
-		eDynamicSet(MavenPackage.DEVELOPER__ID, MavenPackage.Literals.DEVELOPER__ID, newId);
+		eDynamicSet(MavenPackage.DEVELOPER__ID, NcorePackage.Literals.STRING_IDENTITY__ID, newId);
 	}
 
 	/**
@@ -126,6 +128,38 @@ public class DeveloperImpl extends ContributorImpl implements Developer {
 				return ID_EDEFAULT == null ? getId() != null : !ID_EDEFAULT.equals(getId());
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
+		if (baseClass == StringIdentity.class) {
+			switch (derivedFeatureID) {
+				case MavenPackage.DEVELOPER__ID: return NcorePackage.STRING_IDENTITY__ID;
+				default: return -1;
+			}
+		}
+		return super.eBaseStructuralFeatureID(derivedFeatureID, baseClass);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
+		if (baseClass == StringIdentity.class) {
+			switch (baseFeatureID) {
+				case NcorePackage.STRING_IDENTITY__ID: return MavenPackage.DEVELOPER__ID;
+				default: return -1;
+			}
+		}
+		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
 	}
 
 } //DeveloperImpl

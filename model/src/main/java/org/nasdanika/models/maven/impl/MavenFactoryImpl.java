@@ -32,7 +32,6 @@ import org.nasdanika.models.maven.Profile;
 import org.nasdanika.models.maven.Reporting;
 import org.nasdanika.models.maven.Repository;
 import org.nasdanika.models.maven.Scm;
-import org.nasdanika.models.maven.*;
 
 /**
  * <!-- begin-user-doc -->

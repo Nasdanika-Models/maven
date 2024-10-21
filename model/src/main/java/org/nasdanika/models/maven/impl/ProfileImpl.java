@@ -20,7 +20,6 @@ import org.nasdanika.models.maven.Profile;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.nasdanika.models.maven.impl.ProfileImpl#getId <em>Id</em>}</li>
  *   <li>{@link org.nasdanika.models.maven.impl.ProfileImpl#getSource <em>Source</em>}</li>
  *   <li>{@link org.nasdanika.models.maven.impl.ProfileImpl#getActivation <em>Activation</em>}</li>
  *   <li>{@link org.nasdanika.models.maven.impl.ProfileImpl#getBuildBase <em>Build Base</em>}</li>
@@ -29,16 +28,6 @@ import org.nasdanika.models.maven.Profile;
  * @generated
  */
 public class ProfileImpl extends ModelBaseImpl implements Profile {
-	/**
-	 * The default value of the '{@link #getId() <em>Id</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getId()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String ID_EDEFAULT = null;
-
 	/**
 	 * The default value of the '{@link #getSource() <em>Source</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -66,26 +55,6 @@ public class ProfileImpl extends ModelBaseImpl implements Profile {
 	@Override
 	protected EClass eStaticClass() {
 		return MavenPackage.Literals.PROFILE;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String getId() {
-		return (String)eDynamicGet(MavenPackage.PROFILE__ID, MavenPackage.Literals.PROFILE__ID, true, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setId(String newId) {
-		eDynamicSet(MavenPackage.PROFILE__ID, MavenPackage.Literals.PROFILE__ID, newId);
 	}
 
 	/**
@@ -192,8 +161,6 @@ public class ProfileImpl extends ModelBaseImpl implements Profile {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case MavenPackage.PROFILE__ID:
-				return getId();
 			case MavenPackage.PROFILE__SOURCE:
 				return getSource();
 			case MavenPackage.PROFILE__ACTIVATION:
@@ -212,9 +179,6 @@ public class ProfileImpl extends ModelBaseImpl implements Profile {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case MavenPackage.PROFILE__ID:
-				setId((String)newValue);
-				return;
 			case MavenPackage.PROFILE__SOURCE:
 				setSource((String)newValue);
 				return;
@@ -236,9 +200,6 @@ public class ProfileImpl extends ModelBaseImpl implements Profile {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case MavenPackage.PROFILE__ID:
-				setId(ID_EDEFAULT);
-				return;
 			case MavenPackage.PROFILE__SOURCE:
 				setSource(SOURCE_EDEFAULT);
 				return;
@@ -260,8 +221,6 @@ public class ProfileImpl extends ModelBaseImpl implements Profile {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case MavenPackage.PROFILE__ID:
-				return ID_EDEFAULT == null ? getId() != null : !ID_EDEFAULT.equals(getId());
 			case MavenPackage.PROFILE__SOURCE:
 				return SOURCE_EDEFAULT == null ? getSource() != null : !SOURCE_EDEFAULT.equals(getSource());
 			case MavenPackage.PROFILE__ACTIVATION:

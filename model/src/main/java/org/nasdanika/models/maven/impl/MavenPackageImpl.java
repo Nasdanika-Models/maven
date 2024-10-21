@@ -636,6 +636,26 @@ public class MavenPackageImpl extends EPackageImpl implements MavenPackage {
 	 * @generated
 	 */
 	@Override
+	public EAttribute getModel_Packaging() {
+		return (EAttribute)modelEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getModel_InceptionYear() {
+		return (EAttribute)modelEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getParent() {
 		return parentEClass;
 	}
@@ -748,16 +768,6 @@ public class MavenPackageImpl extends EPackageImpl implements MavenPackage {
 	@Override
 	public EClass getDeveloper() {
 		return developerEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getDeveloper_Id() {
-		return (EAttribute)developerEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -886,7 +896,7 @@ public class MavenPackageImpl extends EPackageImpl implements MavenPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getProfile_Id() {
+	public EAttribute getProfile_Source() {
 		return (EAttribute)profileEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -896,18 +906,8 @@ public class MavenPackageImpl extends EPackageImpl implements MavenPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getProfile_Source() {
-		return (EAttribute)profileEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EReference getProfile_Activation() {
-		return (EReference)profileEClass.getEStructuralFeatures().get(2);
+		return (EReference)profileEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -917,7 +917,7 @@ public class MavenPackageImpl extends EPackageImpl implements MavenPackage {
 	 */
 	@Override
 	public EReference getProfile_BuildBase() {
-		return (EReference)profileEClass.getEStructuralFeatures().get(3);
+		return (EReference)profileEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -1071,6 +1071,8 @@ public class MavenPackageImpl extends EPackageImpl implements MavenPackage {
 		createEReference(modelEClass, MODEL__PARENT);
 		createEReference(modelEClass, MODEL__PREREQUISITES);
 		createEReference(modelEClass, MODEL__PROFILES);
+		createEAttribute(modelEClass, MODEL__PACKAGING);
+		createEAttribute(modelEClass, MODEL__INCEPTION_YEAR);
 
 		parentEClass = createEClass(PARENT);
 		createEAttribute(parentEClass, PARENT__RELATIVE_PATH);
@@ -1086,7 +1088,6 @@ public class MavenPackageImpl extends EPackageImpl implements MavenPackage {
 		createEAttribute(contributorEClass, CONTRIBUTOR__URL);
 
 		developerEClass = createEClass(DEVELOPER);
-		createEAttribute(developerEClass, DEVELOPER__ID);
 
 		issueManagementEClass = createEClass(ISSUE_MANAGEMENT);
 
@@ -1104,7 +1105,6 @@ public class MavenPackageImpl extends EPackageImpl implements MavenPackage {
 		createEAttribute(prerequisitesEClass, PREREQUISITES__MAVEN);
 
 		profileEClass = createEClass(PROFILE);
-		createEAttribute(profileEClass, PROFILE__ID);
 		createEAttribute(profileEClass, PROFILE__SOURCE);
 		createEReference(profileEClass, PROFILE__ACTIVATION);
 		createEReference(profileEClass, PROFILE__BUILD_BASE);
@@ -1157,11 +1157,13 @@ public class MavenPackageImpl extends EPackageImpl implements MavenPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
+		modelBaseEClass.getESuperTypes().add(theNcorePackage.getStringIdentity());
 		dependencyEClass.getESuperTypes().add(this.getCoordinates());
 		modelEClass.getESuperTypes().add(this.getModelBase());
 		modelEClass.getESuperTypes().add(this.getCoordinates());
 		parentEClass.getESuperTypes().add(this.getCoordinates());
 		developerEClass.getESuperTypes().add(this.getContributor());
+		developerEClass.getESuperTypes().add(theNcorePackage.getStringIdentity());
 		profileEClass.getESuperTypes().add(this.getModelBase());
 
 		// Initialize classes, features, and operations; add parameters
@@ -1207,6 +1209,8 @@ public class MavenPackageImpl extends EPackageImpl implements MavenPackage {
 		initEReference(getModel_Parent(), this.getParent(), null, "parent", null, 0, 1, Model.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getModel_Prerequisites(), this.getPrerequisites(), null, "prerequisites", null, 0, 1, Model.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getModel_Profiles(), this.getProfile(), null, "profiles", null, 0, -1, Model.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getModel_Packaging(), ecorePackage.getEString(), "packaging", null, 0, 1, Model.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getModel_InceptionYear(), ecorePackage.getEString(), "inceptionYear", null, 0, 1, Model.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(parentEClass, Parent.class, "Parent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getParent_RelativePath(), ecorePackage.getEString(), "relativePath", null, 0, 1, Parent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1222,7 +1226,6 @@ public class MavenPackageImpl extends EPackageImpl implements MavenPackage {
 		initEAttribute(getContributor_Url(), ecorePackage.getEString(), "url", null, 0, 1, Contributor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(developerEClass, Developer.class, "Developer", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getDeveloper_Id(), ecorePackage.getEString(), "id", null, 0, 1, Developer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(issueManagementEClass, IssueManagement.class, "IssueManagement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -1240,7 +1243,6 @@ public class MavenPackageImpl extends EPackageImpl implements MavenPackage {
 		initEAttribute(getPrerequisites_Maven(), ecorePackage.getEString(), "maven", null, 0, 1, Prerequisites.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(profileEClass, Profile.class, "Profile", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getProfile_Id(), ecorePackage.getEString(), "id", null, 0, 1, Profile.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProfile_Source(), ecorePackage.getEString(), "source", null, 0, 1, Profile.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProfile_Activation(), this.getActivation(), null, "activation", null, 0, 1, Profile.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProfile_BuildBase(), this.getBuildBase(), null, "buildBase", null, 0, 1, Profile.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

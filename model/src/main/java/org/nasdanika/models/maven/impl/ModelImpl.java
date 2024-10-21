@@ -51,6 +51,8 @@ import org.nasdanika.models.maven.Profile;
  *   <li>{@link org.nasdanika.models.maven.impl.ModelImpl#getParent <em>Parent</em>}</li>
  *   <li>{@link org.nasdanika.models.maven.impl.ModelImpl#getPrerequisites <em>Prerequisites</em>}</li>
  *   <li>{@link org.nasdanika.models.maven.impl.ModelImpl#getProfiles <em>Profiles</em>}</li>
+ *   <li>{@link org.nasdanika.models.maven.impl.ModelImpl#getPackaging <em>Packaging</em>}</li>
+ *   <li>{@link org.nasdanika.models.maven.impl.ModelImpl#getInceptionYear <em>Inception Year</em>}</li>
  * </ul>
  *
  * @generated
@@ -105,6 +107,26 @@ public class ModelImpl extends ModelBaseImpl implements Model {
 	 * @ordered
 	 */
 	protected static final String DESCRIPTION_EDEFAULT = null;
+
+	/**
+	 * The default value of the '{@link #getPackaging() <em>Packaging</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPackaging()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String PACKAGING_EDEFAULT = null;
+
+	/**
+	 * The default value of the '{@link #getInceptionYear() <em>Inception Year</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getInceptionYear()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String INCEPTION_YEAR_EDEFAULT = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -465,6 +487,46 @@ public class ModelImpl extends ModelBaseImpl implements Model {
 	 * @generated
 	 */
 	@Override
+	public String getPackaging() {
+		return (String)eDynamicGet(MavenPackage.MODEL__PACKAGING, MavenPackage.Literals.MODEL__PACKAGING, true, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPackaging(String newPackaging) {
+		eDynamicSet(MavenPackage.MODEL__PACKAGING, MavenPackage.Literals.MODEL__PACKAGING, newPackaging);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getInceptionYear() {
+		return (String)eDynamicGet(MavenPackage.MODEL__INCEPTION_YEAR, MavenPackage.Literals.MODEL__INCEPTION_YEAR, true, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setInceptionYear(String newInceptionYear) {
+		eDynamicSet(MavenPackage.MODEL__INCEPTION_YEAR, MavenPackage.Literals.MODEL__INCEPTION_YEAR, newInceptionYear);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case MavenPackage.MODEL__CI_MANAGEMENT:
@@ -532,6 +594,10 @@ public class ModelImpl extends ModelBaseImpl implements Model {
 				return getPrerequisites();
 			case MavenPackage.MODEL__PROFILES:
 				return getProfiles();
+			case MavenPackage.MODEL__PACKAGING:
+				return getPackaging();
+			case MavenPackage.MODEL__INCEPTION_YEAR:
+				return getInceptionYear();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -598,6 +664,12 @@ public class ModelImpl extends ModelBaseImpl implements Model {
 				getProfiles().clear();
 				getProfiles().addAll((Collection<? extends Profile>)newValue);
 				return;
+			case MavenPackage.MODEL__PACKAGING:
+				setPackaging((String)newValue);
+				return;
+			case MavenPackage.MODEL__INCEPTION_YEAR:
+				setInceptionYear((String)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -658,6 +730,12 @@ public class ModelImpl extends ModelBaseImpl implements Model {
 			case MavenPackage.MODEL__PROFILES:
 				getProfiles().clear();
 				return;
+			case MavenPackage.MODEL__PACKAGING:
+				setPackaging(PACKAGING_EDEFAULT);
+				return;
+			case MavenPackage.MODEL__INCEPTION_YEAR:
+				setInceptionYear(INCEPTION_YEAR_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -702,6 +780,10 @@ public class ModelImpl extends ModelBaseImpl implements Model {
 				return getPrerequisites() != null;
 			case MavenPackage.MODEL__PROFILES:
 				return !getProfiles().isEmpty();
+			case MavenPackage.MODEL__PACKAGING:
+				return PACKAGING_EDEFAULT == null ? getPackaging() != null : !PACKAGING_EDEFAULT.equals(getPackaging());
+			case MavenPackage.MODEL__INCEPTION_YEAR:
+				return INCEPTION_YEAR_EDEFAULT == null ? getInceptionYear() != null : !INCEPTION_YEAR_EDEFAULT.equals(getInceptionYear());
 		}
 		return super.eIsSet(featureID);
 	}

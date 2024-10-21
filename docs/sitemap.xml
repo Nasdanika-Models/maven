@@ -2,782 +2,787 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" >
   <url>
     <loc>https://maven.models.nasdanika.org/circular-layout-graph-with-dependencies-and-subpackages.html</loc>
-    <lastmod>2024-10-20T23:30:59.311-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.673-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/circular-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.307-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.669-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/classifiers.html</loc>
-    <lastmod>2024-10-20T23:30:59.299-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.660-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/default-graph-with-dependencies-and-subpackages.html</loc>
-    <lastmod>2024-10-20T23:30:59.310-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.672-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/default-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.306-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.668-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/diagram.html</loc>
-    <lastmod>2024-10-20T23:30:59.304-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.667-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/force-layout-graph-with-dependencies-and-subpackages.html</loc>
-    <lastmod>2024-10-20T23:30:59.312-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.677-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/force-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.308-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.671-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/glossary.html</loc>
-    <lastmod>2024-10-20T23:30:59.318-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.683-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/index.html</loc>
-    <lastmod>2024-10-20T23:30:59.146-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.474-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Activation/circular-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.152-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.480-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Activation/default-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.151-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.479-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Activation/diagram.html</loc>
-    <lastmod>2024-10-20T23:30:59.148-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.476-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Activation/force-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.153-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.481-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Activation/index.html</loc>
-    <lastmod>2024-10-20T23:30:59.148-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.475-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/BuildBase/circular-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.157-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.485-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/BuildBase/default-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.156-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.484-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/BuildBase/diagram.html</loc>
-    <lastmod>2024-10-20T23:30:59.155-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.483-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/BuildBase/force-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.157-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.486-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/BuildBase/index.html</loc>
-    <lastmod>2024-10-20T23:30:59.154-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.482-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/CiManagement/circular-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.162-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.493-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/CiManagement/default-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.161-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.492-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/CiManagement/diagram.html</loc>
-    <lastmod>2024-10-20T23:30:59.160-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.490-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/CiManagement/force-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.163-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.493-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/CiManagement/index.html</loc>
-    <lastmod>2024-10-20T23:30:59.158-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.488-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Contributor/attributes.html</loc>
-    <lastmod>2024-10-20T23:30:59.164-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.495-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Contributor/circular-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.170-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.501-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Contributor/default-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.169-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.500-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Contributor/diagram.html</loc>
-    <lastmod>2024-10-20T23:30:59.168-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.500-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Contributor/force-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.170-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.502-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Contributor/index.html</loc>
-    <lastmod>2024-10-20T23:30:59.163-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.494-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Contributor/inheritance.html</loc>
-    <lastmod>2024-10-20T23:30:59.166-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.498-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Contributor/load-specification.html</loc>
-    <lastmod>2024-10-20T23:30:59.171-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.503-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Contributor/references.html</loc>
-    <lastmod>2024-10-20T23:30:59.165-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.497-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Coordinates/attributes.html</loc>
-    <lastmod>2024-10-20T23:30:59.173-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.505-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Coordinates/circular-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.179-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.513-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Coordinates/default-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.178-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.512-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Coordinates/diagram.html</loc>
-    <lastmod>2024-10-20T23:30:59.177-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.511-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Coordinates/force-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.180-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.522-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Coordinates/index.html</loc>
-    <lastmod>2024-10-20T23:30:59.172-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.504-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Coordinates/inheritance.html</loc>
-    <lastmod>2024-10-20T23:30:59.175-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.508-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Coordinates/load-specification.html</loc>
-    <lastmod>2024-10-20T23:30:59.181-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.523-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Coordinates/references.html</loc>
-    <lastmod>2024-10-20T23:30:59.174-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.508-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Dependency/attributes.html</loc>
-    <lastmod>2024-10-20T23:30:59.183-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.525-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Dependency/circular-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.188-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.531-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Dependency/default-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.187-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.530-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Dependency/diagram.html</loc>
-    <lastmod>2024-10-20T23:30:59.186-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.529-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Dependency/force-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.189-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.531-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Dependency/index.html</loc>
-    <lastmod>2024-10-20T23:30:59.182-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.524-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Dependency/inheritance.html</loc>
-    <lastmod>2024-10-20T23:30:59.184-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.526-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Dependency/load-specification.html</loc>
-    <lastmod>2024-10-20T23:30:59.190-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.532-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Dependency/references.html</loc>
-    <lastmod>2024-10-20T23:30:59.185-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.527-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Developer/attributes.html</loc>
-    <lastmod>2024-10-20T23:30:59.191-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.535-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Developer/circular-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.197-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.541-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Developer/default-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.196-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.540-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Developer/diagram.html</loc>
-    <lastmod>2024-10-20T23:30:59.195-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.539-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Developer/force-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.198-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.542-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Developer/index.html</loc>
-    <lastmod>2024-10-20T23:30:59.191-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.534-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Developer/inheritance.html</loc>
-    <lastmod>2024-10-20T23:30:59.193-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.536-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Developer/load-specification.html</loc>
-    <lastmod>2024-10-20T23:30:59.199-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.542-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Developer/references.html</loc>
-    <lastmod>2024-10-20T23:30:59.194-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.537-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/DistributionManagement/circular-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.203-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.547-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/DistributionManagement/default-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.202-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.546-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/DistributionManagement/diagram.html</loc>
-    <lastmod>2024-10-20T23:30:59.201-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.545-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/DistributionManagement/force-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.204-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.548-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/DistributionManagement/index.html</loc>
-    <lastmod>2024-10-20T23:30:59.200-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.543-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/IssueManagement/circular-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.208-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.553-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/IssueManagement/default-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.207-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.552-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/IssueManagement/diagram.html</loc>
-    <lastmod>2024-10-20T23:30:59.206-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.550-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/IssueManagement/force-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.209-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.554-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/IssueManagement/index.html</loc>
-    <lastmod>2024-10-20T23:30:59.205-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.549-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/License/attributes.html</loc>
-    <lastmod>2024-10-20T23:30:59.211-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.556-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/License/circular-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.214-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.560-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/License/default-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.214-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.559-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/License/diagram.html</loc>
-    <lastmod>2024-10-20T23:30:59.212-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.557-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/License/force-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.215-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.561-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/License/index.html</loc>
-    <lastmod>2024-10-20T23:30:59.210-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.555-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/License/load-specification.html</loc>
-    <lastmod>2024-10-20T23:30:59.216-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.562-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/MailingList/circular-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.220-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.566-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/MailingList/default-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.220-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.565-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/MailingList/diagram.html</loc>
-    <lastmod>2024-10-20T23:30:59.218-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.564-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/MailingList/force-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.221-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.567-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/MailingList/index.html</loc>
-    <lastmod>2024-10-20T23:30:59.217-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.563-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Model/attributes.html</loc>
-    <lastmod>2024-10-20T23:30:59.223-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.569-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Model/circular-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.232-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.579-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Model/default-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.231-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.578-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Model/diagram.html</loc>
-    <lastmod>2024-10-20T23:30:59.230-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.577-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Model/force-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.233-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.580-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Model/index.html</loc>
-    <lastmod>2024-10-20T23:30:59.222-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.568-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Model/inheritance.html</loc>
-    <lastmod>2024-10-20T23:30:59.224-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.570-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Model/load-specification.html</loc>
-    <lastmod>2024-10-20T23:30:59.234-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.582-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Model/references.html</loc>
-    <lastmod>2024-10-20T23:30:59.226-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.572-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://maven.models.nasdanika.org/references/eClassifiers/ModelBase/attributes.html</loc>
+    <lastmod>2024-10-21T12:11:15.583-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/ModelBase/circular-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.243-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.592-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/ModelBase/default-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.242-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.591-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/ModelBase/diagram.html</loc>
-    <lastmod>2024-10-20T23:30:59.241-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.590-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/ModelBase/force-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.244-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.593-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/ModelBase/index.html</loc>
-    <lastmod>2024-10-20T23:30:59.235-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.583-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/ModelBase/inheritance.html</loc>
-    <lastmod>2024-10-20T23:30:59.237-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.585-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/ModelBase/load-specification.html</loc>
-    <lastmod>2024-10-20T23:30:59.244-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.594-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/ModelBase/references.html</loc>
-    <lastmod>2024-10-20T23:30:59.236-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.586-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Module/attributes.html</loc>
-    <lastmod>2024-10-20T23:30:59.246-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.596-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Module/circular-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.252-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.603-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Module/default-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.251-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.602-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Module/diagram.html</loc>
-    <lastmod>2024-10-20T23:30:59.250-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.601-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Module/force-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.252-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.603-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Module/index.html</loc>
-    <lastmod>2024-10-20T23:30:59.246-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.595-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Module/load-specification.html</loc>
-    <lastmod>2024-10-20T23:30:59.253-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.604-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Module/references.html</loc>
-    <lastmod>2024-10-20T23:30:59.247-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.597-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Organization/attributes.html</loc>
-    <lastmod>2024-10-20T23:30:59.255-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.606-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Organization/circular-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.258-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.610-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Organization/default-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.257-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.609-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Organization/diagram.html</loc>
-    <lastmod>2024-10-20T23:30:59.256-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.608-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Organization/force-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.259-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.610-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Organization/index.html</loc>
-    <lastmod>2024-10-20T23:30:59.254-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.605-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Organization/load-specification.html</loc>
-    <lastmod>2024-10-20T23:30:59.260-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.612-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Parent/attributes.html</loc>
-    <lastmod>2024-10-20T23:30:59.262-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.615-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Parent/circular-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.267-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.620-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Parent/default-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.266-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.620-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Parent/diagram.html</loc>
-    <lastmod>2024-10-20T23:30:59.265-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.619-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Parent/force-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.268-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.621-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Parent/index.html</loc>
-    <lastmod>2024-10-20T23:30:59.261-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.614-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Parent/inheritance.html</loc>
-    <lastmod>2024-10-20T23:30:59.263-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.616-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Parent/load-specification.html</loc>
-    <lastmod>2024-10-20T23:30:59.268-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.622-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Parent/references.html</loc>
-    <lastmod>2024-10-20T23:30:59.263-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.617-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Prerequisites/attributes.html</loc>
-    <lastmod>2024-10-20T23:30:59.270-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.624-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Prerequisites/circular-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.273-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.628-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Prerequisites/default-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.272-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.627-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Prerequisites/diagram.html</loc>
-    <lastmod>2024-10-20T23:30:59.272-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.626-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Prerequisites/force-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.274-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.629-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Prerequisites/index.html</loc>
-    <lastmod>2024-10-20T23:30:59.270-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.624-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Prerequisites/load-specification.html</loc>
-    <lastmod>2024-10-20T23:30:59.275-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.630-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Profile/attributes.html</loc>
-    <lastmod>2024-10-20T23:30:59.277-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.632-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Profile/circular-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.282-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.637-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Profile/default-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.281-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.637-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Profile/diagram.html</loc>
-    <lastmod>2024-10-20T23:30:59.281-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.636-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Profile/force-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.283-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.638-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Profile/index.html</loc>
-    <lastmod>2024-10-20T23:30:59.276-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.631-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Profile/inheritance.html</loc>
-    <lastmod>2024-10-20T23:30:59.278-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.633-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Profile/load-specification.html</loc>
-    <lastmod>2024-10-20T23:30:59.284-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.639-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Profile/references.html</loc>
-    <lastmod>2024-10-20T23:30:59.279-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.634-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Reporting/circular-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.288-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.644-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Reporting/default-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.287-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.643-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Reporting/diagram.html</loc>
-    <lastmod>2024-10-20T23:30:59.286-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.642-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Reporting/force-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.289-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.645-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Reporting/index.html</loc>
-    <lastmod>2024-10-20T23:30:59.285-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.641-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Repository/circular-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.293-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.650-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Repository/default-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.292-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.649-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Repository/diagram.html</loc>
-    <lastmod>2024-10-20T23:30:59.291-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.647-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Repository/force-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.293-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.651-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Repository/index.html</loc>
-    <lastmod>2024-10-20T23:30:59.290-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.646-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Scm/circular-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.297-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.657-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Scm/default-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.296-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.655-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Scm/diagram.html</loc>
-    <lastmod>2024-10-20T23:30:59.295-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.654-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Scm/force-layout-graph.html</loc>
-    <lastmod>2024-10-20T23:30:59.298-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.658-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/references/eClassifiers/Scm/index.html</loc>
-    <lastmod>2024-10-20T23:30:59.295-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.653-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://maven.models.nasdanika.org/search.html</loc>
-    <lastmod>2024-10-20T23:30:59.314-04:00</lastmod>
+    <lastmod>2024-10-21T12:11:15.680-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>

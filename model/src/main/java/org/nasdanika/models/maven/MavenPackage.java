@@ -6,6 +6,7 @@ import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
+import org.nasdanika.ncore.NcorePackage;
 
 /**
  * <!-- begin-user-doc -->
@@ -132,13 +133,22 @@ public interface MavenPackage extends EPackage {
 	int MODEL_BASE = 1;
 
 	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL_BASE__ID = NcorePackage.STRING_IDENTITY__ID;
+
+	/**
 	 * The feature id for the '<em><b>Dependencies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MODEL_BASE__DEPENDENCIES = 0;
+	int MODEL_BASE__DEPENDENCIES = NcorePackage.STRING_IDENTITY_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Managed Dependencies</b></em>' containment reference list.
@@ -147,7 +157,7 @@ public interface MavenPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MODEL_BASE__MANAGED_DEPENDENCIES = 1;
+	int MODEL_BASE__MANAGED_DEPENDENCIES = NcorePackage.STRING_IDENTITY_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Distribution Management</b></em>' containment reference.
@@ -156,7 +166,7 @@ public interface MavenPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MODEL_BASE__DISTRIBUTION_MANAGEMENT = 2;
+	int MODEL_BASE__DISTRIBUTION_MANAGEMENT = NcorePackage.STRING_IDENTITY_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Modules</b></em>' containment reference list.
@@ -165,7 +175,7 @@ public interface MavenPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MODEL_BASE__MODULES = 3;
+	int MODEL_BASE__MODULES = NcorePackage.STRING_IDENTITY_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Repositories</b></em>' containment reference list.
@@ -174,7 +184,7 @@ public interface MavenPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MODEL_BASE__REPOSITORIES = 4;
+	int MODEL_BASE__REPOSITORIES = NcorePackage.STRING_IDENTITY_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Plugin Repositories</b></em>' containment reference list.
@@ -183,7 +193,7 @@ public interface MavenPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MODEL_BASE__PLUGIN_REPOSITORIES = 5;
+	int MODEL_BASE__PLUGIN_REPOSITORIES = NcorePackage.STRING_IDENTITY_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Properties</b></em>' containment reference list.
@@ -192,7 +202,7 @@ public interface MavenPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MODEL_BASE__PROPERTIES = 6;
+	int MODEL_BASE__PROPERTIES = NcorePackage.STRING_IDENTITY_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Reporting</b></em>' containment reference.
@@ -201,7 +211,7 @@ public interface MavenPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MODEL_BASE__REPORTING = 7;
+	int MODEL_BASE__REPORTING = NcorePackage.STRING_IDENTITY_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Model Base</em>' class.
@@ -210,7 +220,7 @@ public interface MavenPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MODEL_BASE_FEATURE_COUNT = 8;
+	int MODEL_BASE_FEATURE_COUNT = NcorePackage.STRING_IDENTITY_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of operations of the '<em>Model Base</em>' class.
@@ -219,7 +229,7 @@ public interface MavenPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MODEL_BASE_OPERATION_COUNT = 0;
+	int MODEL_BASE_OPERATION_COUNT = NcorePackage.STRING_IDENTITY_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.nasdanika.models.maven.impl.DependencyImpl <em>Dependency</em>}' class.
@@ -403,6 +413,15 @@ public interface MavenPackage extends EPackage {
 	 * @generated
 	 */
 	int MODEL = 4;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL__ID = MODEL_BASE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Dependencies</b></em>' containment reference list.
@@ -621,13 +640,31 @@ public interface MavenPackage extends EPackage {
 	int MODEL__PROFILES = MODEL_BASE_FEATURE_COUNT + 15;
 
 	/**
+	 * The feature id for the '<em><b>Packaging</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL__PACKAGING = MODEL_BASE_FEATURE_COUNT + 16;
+
+	/**
+	 * The feature id for the '<em><b>Inception Year</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL__INCEPTION_YEAR = MODEL_BASE_FEATURE_COUNT + 17;
+
+	/**
 	 * The number of structural features of the '<em>Model</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MODEL_FEATURE_COUNT = MODEL_BASE_FEATURE_COUNT + 16;
+	int MODEL_FEATURE_COUNT = MODEL_BASE_FEATURE_COUNT + 18;
 
 	/**
 	 * The number of operations of the '<em>Model</em>' class.
@@ -1106,6 +1143,15 @@ public interface MavenPackage extends EPackage {
 	int PROFILE = 12;
 
 	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROFILE__ID = MODEL_BASE__ID;
+
+	/**
 	 * The feature id for the '<em><b>Dependencies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1178,22 +1224,13 @@ public interface MavenPackage extends EPackage {
 	int PROFILE__REPORTING = MODEL_BASE__REPORTING;
 
 	/**
-	 * The feature id for the '<em><b>Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROFILE__ID = MODEL_BASE_FEATURE_COUNT + 0;
-
-	/**
 	 * The feature id for the '<em><b>Source</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PROFILE__SOURCE = MODEL_BASE_FEATURE_COUNT + 1;
+	int PROFILE__SOURCE = MODEL_BASE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Activation</b></em>' containment reference.
@@ -1202,7 +1239,7 @@ public interface MavenPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROFILE__ACTIVATION = MODEL_BASE_FEATURE_COUNT + 2;
+	int PROFILE__ACTIVATION = MODEL_BASE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Build Base</b></em>' containment reference.
@@ -1211,7 +1248,7 @@ public interface MavenPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROFILE__BUILD_BASE = MODEL_BASE_FEATURE_COUNT + 3;
+	int PROFILE__BUILD_BASE = MODEL_BASE_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of structural features of the '<em>Profile</em>' class.
@@ -1220,7 +1257,7 @@ public interface MavenPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROFILE_FEATURE_COUNT = MODEL_BASE_FEATURE_COUNT + 4;
+	int PROFILE_FEATURE_COUNT = MODEL_BASE_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of operations of the '<em>Profile</em>' class.
@@ -1869,6 +1906,28 @@ public interface MavenPackage extends EPackage {
 	EReference getModel_Profiles();
 
 	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.maven.Model#getPackaging <em>Packaging</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Packaging</em>'.
+	 * @see org.nasdanika.models.maven.Model#getPackaging()
+	 * @see #getModel()
+	 * @generated
+	 */
+	EAttribute getModel_Packaging();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.maven.Model#getInceptionYear <em>Inception Year</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Inception Year</em>'.
+	 * @see org.nasdanika.models.maven.Model#getInceptionYear()
+	 * @see #getModel()
+	 * @generated
+	 */
+	EAttribute getModel_InceptionYear();
+
+	/**
 	 * Returns the meta object for class '{@link org.nasdanika.models.maven.Parent <em>Parent</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1998,17 +2057,6 @@ public interface MavenPackage extends EPackage {
 	EClass getDeveloper();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.nasdanika.models.maven.Developer#getId <em>Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Id</em>'.
-	 * @see org.nasdanika.models.maven.Developer#getId()
-	 * @see #getDeveloper()
-	 * @generated
-	 */
-	EAttribute getDeveloper_Id();
-
-	/**
 	 * Returns the meta object for class '{@link org.nasdanika.models.maven.IssueManagement <em>Issue Management</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2134,17 +2182,6 @@ public interface MavenPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getProfile();
-
-	/**
-	 * Returns the meta object for the attribute '{@link org.nasdanika.models.maven.Profile#getId <em>Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Id</em>'.
-	 * @see org.nasdanika.models.maven.Profile#getId()
-	 * @see #getProfile()
-	 * @generated
-	 */
-	EAttribute getProfile_Id();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.nasdanika.models.maven.Profile#getSource <em>Source</em>}'.
@@ -2559,6 +2596,20 @@ public interface MavenPackage extends EPackage {
 		 */
 		EReference MODEL__PROFILES = eINSTANCE.getModel_Profiles();
 		/**
+		 * The meta object literal for the '<em><b>Packaging</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MODEL__PACKAGING = eINSTANCE.getModel_Packaging();
+		/**
+		 * The meta object literal for the '<em><b>Inception Year</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MODEL__INCEPTION_YEAR = eINSTANCE.getModel_InceptionYear();
+		/**
 		 * The meta object literal for the '{@link org.nasdanika.models.maven.impl.ParentImpl <em>Parent</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2648,13 +2699,6 @@ public interface MavenPackage extends EPackage {
 		 * @generated
 		 */
 		EClass DEVELOPER = eINSTANCE.getDeveloper();
-		/**
-		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute DEVELOPER__ID = eINSTANCE.getDeveloper_Id();
 		/**
 		 * The meta object literal for the '{@link org.nasdanika.models.maven.impl.IssueManagementImpl <em>Issue Management</em>}' class.
 		 * <!-- begin-user-doc -->
@@ -2749,13 +2793,6 @@ public interface MavenPackage extends EPackage {
 		 * @generated
 		 */
 		EClass PROFILE = eINSTANCE.getProfile();
-		/**
-		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute PROFILE__ID = eINSTANCE.getProfile_Id();
 		/**
 		 * The meta object literal for the '<em><b>Source</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
