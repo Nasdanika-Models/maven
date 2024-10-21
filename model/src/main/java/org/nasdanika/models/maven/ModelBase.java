@@ -2,6 +2,9 @@
  */
 package org.nasdanika.models.maven;
 
+import java.util.Map.Entry;
+
+import org.apache.maven.model.DependencyManagement;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
@@ -148,8 +151,38 @@ public interface ModelBase extends EObject {
 	 */
 	void setReporting(Reporting value);
 	
-	default void load(org.apache.maven.model.ModelBase modelBase) {
-		
+	default void load(org.apache.maven.model.ModelBase modelBase, MavenFactory factory) {
+		EList<Dependency> dependencies = getDependencies();
+		for (org.apache.maven.model.Dependency d: modelBase.getDependencies()) {
+			Dependency dep = factory.createDependency();
+			dep.load(d, factory);
+			dependencies.add(dep);
+		}
+		DependencyManagement dm = modelBase.getDependencyManagement();
+		EList<Dependency> managedDependencies = getManagedDependencies();
+		if (dm != null) {
+			for (org.apache.maven.model.Dependency d: dm.getDependencies()) {
+				Dependency dep = factory.createDependency();
+				dep.load(d, factory);
+				managedDependencies.add(dep);
+			}			
+		}
+		EList<Module> modules = getModules();
+		for (String m: modelBase.getModules()) {
+			Module module = factory.createModule();
+			module.setPath(m);
+			modules.add(module);
+		}
+		EList<StringProperty> properties = getProperties();
+		for (Entry<Object, Object> p: modelBase.getProperties().entrySet()) {
+			StringProperty prop = StringProperty.wrap((String) p.getKey(), (String) p.getValue());
+			properties.add(prop);
+		}
+//		getDistributionManagement()
+//		getPluginRepositories()
+//		getRepositories()
+//		setDistributionManagement(DistributionManagement)
+//		setReporting(Reporting)
 	}
 
 } // ModelBase

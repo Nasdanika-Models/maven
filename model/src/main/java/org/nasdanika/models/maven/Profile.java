@@ -110,5 +110,14 @@ public interface Profile extends ModelBase {
 	 * @generated
 	 */
 	void setBuildBase(BuildBase value);
+	
+	default void load(org.apache.maven.model.Profile profile, MavenFactory factory) {
+		ModelBase.super.load(profile, factory);
+		
+//		setActivation(Activation)
+//		setBuildBase(BuildBase)
+		setId(profile.getId());
+		setSource(profile.getSource());				
+	}
 
 } // Profile

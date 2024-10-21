@@ -9,6 +9,8 @@ import org.apache.maven.model.Model;
 import org.apache.maven.model.Plugin;
 import org.apache.maven.model.io.xpp3.MavenXpp3Reader;
 import org.junit.jupiter.api.Test;
+import org.nasdanika.models.maven.MavenFactory;
+import org.nasdanika.models.maven.Parent;
 
 public class MavenTests {
 	
@@ -26,5 +28,22 @@ public class MavenTests {
 			}
 		}
 	}
+	
+	@Test
+	public void testLoadModel() throws Exception {
+		org.nasdanika.models.maven.Model model = MavenFactory.eINSTANCE.createModel();
+		try (InputStream in = new FileInputStream("pom.xml")) {
+			model.load(in);
+		}
+		System.out.println(model.getName());
+		System.out.println(model.getGroupId());
+		System.out.println(model.getArtifactId());
+		System.out.println(model.getVersion());
+		
+		Parent parent = model.getParent();
+		System.out.println(parent.getGroupId());
+		System.out.println(parent.getArtifactId());
+		System.out.println(parent.getVersion());		
+	}	
 
 }

@@ -188,4 +188,13 @@ public interface Contributor extends EObject {
 	 */
 	void setUrl(String value);
 
+	default void load(org.apache.maven.model.Contributor contributor) {
+		setEMail(contributor.getEmail());
+		setName(contributor.getName());
+		setOrganization(contributor.getOrganization());
+		setOrganizationUrl(contributor.getOrganizationUrl());
+		setTimezone(contributor.getTimezone());
+		setUrl(contributor.getUrl());	
+	}
+
 } // Contributor

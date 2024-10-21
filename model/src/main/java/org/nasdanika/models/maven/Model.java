@@ -2,9 +2,12 @@
  */
 package org.nasdanika.models.maven;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.Reader;
+import java.util.List;
 import java.util.function.Function;
 
 import org.apache.maven.model.io.xpp3.MavenXpp3Reader;
@@ -252,21 +255,95 @@ public interface Model extends ModelBase, Coordinates {
 	 * @generated
 	 */
 	EList<Profile> getProfiles();
-		
+	
 	default void load(org.apache.maven.model.Model model) {
-		ModelBase.super.load(model);
-		
-		
+		load(model, MavenFactory.eINSTANCE);
 	}
 		
+	default void load(org.apache.maven.model.Model model, MavenFactory factory) {
+		ModelBase.super.load(model, factory);
+		
+		setArtifactId(model.getArtifactId());
+		setGroupId(model.getGroupId());
+		setVersion(model.getVersion());		
+		
+		List<Contributor> contributors = getContributors();		
+		for (org.apache.maven.model.Contributor c: model.getContributors()) {
+			Contributor contributor = factory.createContributor();
+			contributor.load(c);
+			contributors.add(contributor);
+		}
+		
+		setDescription(model.getDescription());
+		
+		List<Developer> developers = getDevelopers();		
+		for (org.apache.maven.model.Developer d: model.getDevelopers()) {
+			Developer developer = factory.createDeveloper();
+			developer.load(d);
+			developers.add(developer);
+		}
+		
+		setName(model.getName());
+		
+		org.apache.maven.model.Organization org = model.getOrganization();
+		if (org != null) {
+			Organization o = factory.createOrganization();
+			o.load(org);
+			setOrganization(o);
+		}
+		
+		org.apache.maven.model.Parent parent = model.getParent();
+		if (parent != null) {
+			Parent p = factory.createParent();
+			p.load(parent);
+			setParent(p);
+		}
+		
+		EList<Profile> profiles = getProfiles();
+		for (org.apache.maven.model.Profile p: model.getProfiles()) {
+			Profile profile = factory.createProfile();
+			profile.load(p, factory);
+			profiles.add(profile);
+		}
+
+//		setPrerequisites(Prerequisites)		
+//		setCiManagement(CiManagement)
+//		setIssueManagement(IssueManagement)
+//		getLicenses()
+//		getMailingLists()
+
+	}
+		
+	default void load(Reader reader, MavenFactory factory) throws IOException, XmlPullParserException {
+		MavenXpp3Reader mReader = new MavenXpp3Reader();
+		load(mReader.read(reader), factory);				
+	}
+		
+	default void load(InputStream in, MavenFactory factory) throws IOException, XmlPullParserException {
+		MavenXpp3Reader mReader = new MavenXpp3Reader();
+		load(mReader.read(in), factory);
+	}
+		
+	default void load(File pomFile, MavenFactory factory) throws IOException, XmlPullParserException {
+		try (InputStream in = new FileInputStream(pomFile)) {
+			load(in, factory);
+		}
+	}
+	
 	default void load(Reader reader) throws IOException, XmlPullParserException {
 		MavenXpp3Reader mReader = new MavenXpp3Reader();
-		ModelBase.super.load(mReader.read(reader));				
+		load(mReader.read(reader));				
 	}
 		
 	default void load(InputStream in) throws IOException, XmlPullParserException {
 		MavenXpp3Reader mReader = new MavenXpp3Reader();
-		ModelBase.super.load(mReader.read(in));
+		load(mReader.read(in));
+	}
+		
+	default void load(File pomFile) throws IOException, XmlPullParserException {
+		try (InputStream in = new FileInputStream(pomFile)) {
+			load(in);
+		}
 	}
 	
 	@Override

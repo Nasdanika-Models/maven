@@ -41,5 +41,10 @@ public interface Developer extends Contributor {
 	 * @generated
 	 */
 	void setId(String value);
+	
+	default void load(org.apache.maven.model.Developer developer) {
+		Contributor.super.load(developer);
+		setId(developer.getId());
+	}
 
 } // Developer

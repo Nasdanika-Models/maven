@@ -2,6 +2,7 @@
  */
 package org.nasdanika.models.maven;
 
+import org.apache.maven.model.Exclusion;
 import org.eclipse.emf.common.util.EList;
 
 /**
@@ -170,5 +171,26 @@ public interface Dependency extends Coordinates {
 	 * @generated
 	 */
 	void setType(String value);
+
+	default void load(org.apache.maven.model.Dependency dependency, MavenFactory factory) {
+		setArtifactId(dependency.getArtifactId());
+		setGroupId(dependency.getGroupId());
+		setVersion(dependency.getVersion());		
+		
+		EList<Coordinates> exclusions = getExclusions();
+		for (Exclusion ex: dependency.getExclusions()) {
+			Coordinates excl = factory.createCoordinates();
+			excl.setArtifactId(ex.getArtifactId());
+			excl.setGroupId(ex.getGroupId());
+			exclusions.add(excl);
+		}
+		
+		setClassifier(dependency.getClassifier());
+		setManagementKey(dependency.getManagementKey());
+		setOptional(dependency.getOptional());
+		setScope(dependency.getScope());
+		setSystemPath(dependency.getSystemPath());
+		setType(dependency.getType());
+	}
 
 } // Dependency

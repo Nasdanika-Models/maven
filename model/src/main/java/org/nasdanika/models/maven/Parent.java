@@ -42,4 +42,11 @@ public interface Parent extends Coordinates {
 	 */
 	void setRelativePath(String value);
 
+	default void load(org.apache.maven.model.Parent parent) {
+		setArtifactId(parent.getArtifactId());
+		setGroupId(parent.getGroupId());
+		setVersion(parent.getVersion());		
+		setRelativePath(parent.getRelativePath());
+	}
+
 } // Parent

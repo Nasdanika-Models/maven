@@ -66,4 +66,9 @@ public interface Organization extends EObject {
 	 */
 	void setUrl(String value);
 
+	default void load(org.apache.maven.model.Organization org) {
+		setName(org.getName());
+		setUrl(org.getUrl());
+	}
+
 } // Organization
