@@ -93,7 +93,7 @@ public class TestMavenModelDocGen {
 		
 		EObjectNodeProcessorReflectiveFactory<WidgetFactory, WidgetFactory> eObjectNodeProcessorReflectiveFactory = new EObjectNodeProcessorReflectiveFactory<>(ecoreNodeProcessorFactory);
 		EObjectReflectiveProcessorFactoryProvider eObjectReflectiveProcessorFactoryProvider = new EObjectReflectiveProcessorFactoryProvider(eObjectNodeProcessorReflectiveFactory);
-		Map<Element, ProcessorInfo<Object>> registry = eObjectReflectiveProcessorFactoryProvider.getFactory().createProcessors(configs.values(), false, progressMonitor);
+		Map<Element, ProcessorConfig<WidgetFactory, WidgetFactory, Object>> registry = eObjectReflectiveProcessorFactoryProvider.getFactory().createProcessors(configs.values(), false, progressMonitor);
 		
 		WidgetFactory mavenProcessor = null;
 		Collection<Throwable> resolveFailures = new ArrayList<>();		
@@ -105,13 +105,13 @@ public class TestMavenModelDocGen {
 		);
 		
 		for (EPackage topLevelPackage: ePackages) {
-			for (Entry<Element, ProcessorInfo<Object>> re: registry.entrySet()) {
+			for (Entry<Element, ProcessorConfig<WidgetFactory, WidgetFactory, Object>> re: registry.entrySet()) {
 				Element element = re.getKey();
 				if (element instanceof EObjectNode) {
 					EObjectNode eObjNode = (EObjectNode) element;
 					EObject target = eObjNode.get();
 					if (target == topLevelPackage) {
-						ProcessorInfo<Object> info = re.getValue();
+						ProcessorConfig<WidgetFactory, WidgetFactory, Object> info = re.getValue();
 						Object processor = info.getProcessor();
 						if (processor instanceof WidgetFactory) {
 							WidgetFactory widgetFactoryNodeProcessor = (WidgetFactory) processor;
