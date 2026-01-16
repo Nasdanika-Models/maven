@@ -61,7 +61,7 @@ public class TestMavenModelDocGen {
 		Transformer<EObject,Element> graphFactory = new Transformer<>(new EcoreGraphFactory());
 		Map<EObject, Element> graph = graphFactory.transform(ePackages, false, progressMonitor);
 
-		NopEndpointProcessorConfigFactory<WidgetFactory> configFactory = new NopEndpointProcessorConfigFactory<>() {
+		NopEndpointProcessorConfigFactory<WidgetFactory,Object> configFactory = new NopEndpointProcessorConfigFactory<>() {
 			
 			@Override
 			protected boolean isPassThrough(Connection connection) {
@@ -70,8 +70,8 @@ public class TestMavenModelDocGen {
 			
 		};
 		
-		Transformer<Element,ProcessorConfig> processorConfigTransformer = new Transformer<>(configFactory);				
-		Map<Element, ProcessorConfig> configs = processorConfigTransformer.transform(graph.values(), false, progressMonitor);
+		Transformer<Element,ProcessorConfig<WidgetFactory,WidgetFactory,Object>> processorConfigTransformer = new Transformer<>(configFactory);				
+		Map<Element, ProcessorConfig<WidgetFactory,WidgetFactory,Object>> configs = processorConfigTransformer.transform(graph.values(), false, progressMonitor);
 		
 		MutableContext context = Context.EMPTY_CONTEXT.fork();
 		Consumer<Diagnostic> diagnosticConsumer = d -> d.dump(System.out, 0);
@@ -91,9 +91,9 @@ public class TestMavenModelDocGen {
 				diagnosticConsumer,
 				ecoreGenMavenProcessorFactory);
 		
-		EObjectNodeProcessorReflectiveFactory<WidgetFactory, WidgetFactory> eObjectNodeProcessorReflectiveFactory = new EObjectNodeProcessorReflectiveFactory<>(ecoreNodeProcessorFactory);
+		EObjectNodeProcessorReflectiveFactory<WidgetFactory, WidgetFactory, Object> eObjectNodeProcessorReflectiveFactory = new EObjectNodeProcessorReflectiveFactory<>(ecoreNodeProcessorFactory);
 		EObjectReflectiveProcessorFactoryProvider eObjectReflectiveProcessorFactoryProvider = new EObjectReflectiveProcessorFactoryProvider(eObjectNodeProcessorReflectiveFactory);
-		Map<Element, ProcessorConfig<WidgetFactory, WidgetFactory, Object>> registry = eObjectReflectiveProcessorFactoryProvider.getFactory().createProcessors(configs.values(), false, progressMonitor);
+		Map<Element, ProcessorInfo<WidgetFactory, WidgetFactory, Object, Object>> registry = eObjectReflectiveProcessorFactoryProvider.getFactory().createProcessors(configs.values(), false, progressMonitor);
 		
 		WidgetFactory mavenProcessor = null;
 		Collection<Throwable> resolveFailures = new ArrayList<>();		
@@ -105,13 +105,13 @@ public class TestMavenModelDocGen {
 		);
 		
 		for (EPackage topLevelPackage: ePackages) {
-			for (Entry<Element, ProcessorConfig<WidgetFactory, WidgetFactory, Object>> re: registry.entrySet()) {
+			for (Entry<Element, ProcessorInfo<WidgetFactory, WidgetFactory, Object, Object>> re: registry.entrySet()) {
 				Element element = re.getKey();
 				if (element instanceof EObjectNode) {
 					EObjectNode eObjNode = (EObjectNode) element;
 					EObject target = eObjNode.get();
 					if (target == topLevelPackage) {
-						ProcessorConfig<WidgetFactory, WidgetFactory, Object> info = re.getValue();
+						ProcessorInfo<WidgetFactory, WidgetFactory, Object, Object> info = re.getValue();
 						Object processor = info.getProcessor();
 						if (processor instanceof WidgetFactory) {
 							WidgetFactory widgetFactoryNodeProcessor = (WidgetFactory) processor;
