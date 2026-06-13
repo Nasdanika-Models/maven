@@ -12,7 +12,7 @@ module org.nasdanika.models.maven {
 	requires transitive org.eclipse.emf.common;
 	
 	requires transitive maven.model;
-	requires plexus.utils;
+	requires org.codehaus.plexus.util;
 
 	provides CapabilityFactory with	MavenEPackageResourceSetCapabilityFactory;
 	
